@@ -1,4 +1,4 @@
-# 🌐 Personal Portfolio
+# 🌐 Personal Portfolio [Vite + React + Tailwind CSS
 
 A modern, fully responsive, and component-driven personal portfolio website built using **React 19**, **Vite**, and **Tailwind CSS**. This application showcases personal information, skills, experience, projects, education, and a contact form—all organized in a sleek, animated layout.
 
