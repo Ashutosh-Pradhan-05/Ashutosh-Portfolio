@@ -25,6 +25,3 @@ A modern, fully responsive, and component-driven personal portfolio website buil
 - Custom CSS utilities for extra visual polish
 
 ---
-
-## 📁 Project Structure
-
