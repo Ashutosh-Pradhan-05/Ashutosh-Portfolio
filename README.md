@@ -31,13 +31,17 @@ This project is a **single-page application** built entirely with reusable React
 
 ### ✨ Features
 
-- 📱 Fully responsive on all screen sizes
-- 🔗 Smooth navigation across sections
-- 🎨 Animated background gradients and blob shapes
-- 🌀 Hover and scroll animations using Framer Motion
-- 🧲 Parallax tilt effects on cards and UI
-- ⌨️ Typing effect for headings and titles
-- 📬 EmailJS-integrated contact form
-- 🔔 Toast notifications for feedback
+
+- ⚛️ Built with **React 19** (component-based architecture)
+- 🎨 **Tailwind CSS** for utility-first responsive styling
+- 🌐 **React Router** for SPA routing
+- 🎥 **Framer Motion** for animations
+- 🎭 **React Parallax Tilt** for interactive 3D effects
+- 📝 Typewriter effect for animated text
+- 📮 **EmailJS** for sending emails via contact form
+- 🔔 Toast notifications using `react-toastify`
+- 🔧 **PropTypes** for component type-checking
+- 🌗 Custom background gradients, wave effects, and blur blobs
+- 📱 Fully responsive for mobile, tablet, and desktop
 
 ---
