@@ -35,3 +35,14 @@ Optimized for both **performance** and **scalability**, this portfolio serves as
 - 🧪 Vite Dev, Build, and Preview Scripts
 
 ---
+## Contact
+
+Designed and Developed by **Ashutosh Pradhan**.
+- **Portfolio**: [Personal Portfolio](https://ashutoshdevportfolio.netlify.app)
+- **Email**: [contactwithashuind@gmail.com](mailto:contactwithashuind@gmail.com)
+- **GitHub**: [https://github.com/Ashutosh-Pradhan-05](https://github.com/Ashutosh-Pradhan-05)
+- **LinkedIn**: [https://www.linkedin.com/in/ashutosh-pradhan05](https://www.linkedin.com/in/ashutosh-pradhan05)
+- **Twitter**: [https://x.com/Ashutoshtwitind](https://x.com/Ashutoshtwitind)
+
+Feel free to reach out for any queries or support!
+### Thank you for visiting my project.😊
