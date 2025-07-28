@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio [Vite + React + Tailwind CSS]
 
-![Project Landing Page]<img width="1877" height="956" alt="main" src="https://github.com/user-attachments/assets/3f30e2ed-069f-4abb-aa98-e35ec6870037" />
+<img width="1877" height="956" alt="main" src="https://github.com/user-attachments/assets/3f30e2ed-069f-4abb-aa98-e35ec6870037" />
 
 
 ## 📖 Overview
@@ -44,6 +44,37 @@ Optimized for both **performance** and **scalability**, this portfolio serves as
 <img width="1877" height="956" alt="main" src="https://github.com/user-attachments/assets/1b5ac851-d5b6-4347-af0c-80bb2efed315" />
 
 
+### 2️⃣ Skills Section
+
+<img width="1881" height="956" alt="skills" src="https://github.com/user-attachments/assets/4839e70e-08df-418a-af7d-3459e37780e8" />
+
+
+### 3️⃣ Experience Section
+
+<img width="1882" height="953" alt="exp" src="https://github.com/user-attachments/assets/9bfabb10-cdc4-4290-97c2-d41b0b118132" />
+
+
+### 4️⃣ Project Section
+
+<img width="1884" height="948" alt="projects" src="https://github.com/user-attachments/assets/802f11d4-f266-4380-bd3c-7bf7b4007360" />
+
+
+### 5️⃣ Education Section
+
+<img width="1880" height="957" alt="edu" src="https://github.com/user-attachments/assets/474984b4-0790-4ff4-a64e-f472724336e3" />
+
+
+### 6️⃣ Contact Me Section
+
+<img width="1880" height="959" alt="contact" src="https://github.com/user-attachments/assets/a1cad07c-4d98-4836-b601-af90d00fd153" />
+
+
+### 7️⃣ Footer Section
+
+<img width="1882" height="951" alt="footer" src="https://github.com/user-attachments/assets/1329db1a-45cd-4395-9fe4-3132a3a12585" />
+
+
+---
 ## 📞 Contact
 
 Designed and Developed by **Ashutosh Pradhan**.
