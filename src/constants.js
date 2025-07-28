@@ -31,7 +31,7 @@ import vscodeLogo from './assets/tech_logo/vscode.png';
 import postmanLogo from './assets/tech_logo/postman.png';
 import mcLogo from './assets/tech_logo/mc.png';
 import netlifyLogo from './assets/tech_logo/netlify.png';
-import vercelLogo from './assets/tech_logo/vercel.png';
+import emailjsLogo from './assets/tech_logo/emailjs.png';
 import npmLogo from './assets/tech_logo/npm.png';
 
 // Experience Section Logo's
@@ -96,11 +96,11 @@ export const SkillsInfo = [
     skills: [
       { name: 'Git', logo: gitLogo },
       { name: 'GitHub', logo: githubLogo },
-      { name: 'VS Code', logo: vscodeLogo },
       { name: 'Postman', logo: postmanLogo },
-      { name: 'Compass', logo: mcLogo },
-      { name: 'Vercel', logo: vercelLogo },
+      { name: 'EmailJS', logo: emailjsLogo },
+      { name: 'VS Code', logo: vscodeLogo },
       { name: 'Netlify', logo: netlifyLogo },
+      { name: 'Compass', logo: mcLogo },
       { name: 'NPM', logo: npmLogo },
     ],
   },
