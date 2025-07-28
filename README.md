@@ -1,6 +1,7 @@
 # 🌐 Personal Portfolio [Vite + React + Tailwind CSS]
 
-![Project Landing Page]<img width="1877" height="956" alt="main" src="https://github.com/user-attachments/assets/60f9c263-b916-4358-be38-ac32184d3ee3" />
+![Project Landing Page]<img width="1877" height="956" alt="main" src="https://github.com/user-attachments/assets/3f30e2ed-069f-4abb-aa98-e35ec6870037" />
+
 
 ## 📖 Overview
 
@@ -40,7 +41,8 @@ Optimized for both **performance** and **scalability**, this portfolio serves as
 
 ### 1️⃣ About Section
 
-<img width="1877" height="956" alt="main" src="https://github.com/user-attachments/assets/1733df85-4808-4120-9cd7-f570f4f279a3" />
+<img width="1877" height="956" alt="main" src="https://github.com/user-attachments/assets/1b5ac851-d5b6-4347-af0c-80bb2efed315" />
+
 
 ## 📞 Contact
 
