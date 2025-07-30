@@ -26,11 +26,11 @@ import sqlLogo from './assets/tech_logo/sql-logo.png';
 import cLogo from './assets/tech_logo/c.png';
 // tools
 import gitLogo from './assets/tech_logo/git.png';
-import githubLogo from './assets/tech_logo/github.png';
+import githubLogo from './assets/tech_logo/githublogo.png';
 import vscodeLogo from './assets/tech_logo/vscode.png';
 import postmanLogo from './assets/tech_logo/postman.png';
 import mcLogo from './assets/tech_logo/mc.png';
-import netlifyLogo from './assets/tech_logo/netlify.png';
+import netlifyLogo from './assets/tech_logo/netlifylogo.png';
 import emailjsLogo from './assets/tech_logo/emailjs.png';
 import npmLogo from './assets/tech_logo/npm.png';
 

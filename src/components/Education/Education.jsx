@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 import { education } from "../../constants";
 import { GiMedallist } from "react-icons/gi";
 import { FaSchoolFlag } from "react-icons/fa6";
@@ -14,7 +15,23 @@ const Education = () => {
       {/* Section Title */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold">EDUCATION</h2>
-        <div className="w-72 h-3 bg-gradient-to-r from-[#fc466b] to-[#3f5efb] mx-auto mt-2"></div>
+        {/* <div className="w-72 h-3 bg-gradient-to-r from-[#fc466b] to-[#3f5efb] mx-auto mt-2"></div> */}
+        <motion.div
+          animate={{
+            backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+          }}
+          transition={{
+            duration: 1,
+            repeat: Infinity,
+            ease: 'easeInOut',
+          }}
+          className="w-72 h-3 mx-auto mt-2 bg-gradient-to-r from-[#fc466b] to-[#3f5efb] bg-[length:200%_200%]"
+          style={{
+            backgroundImage: 'linear-gradient(to right, #fc466b, #3f5efb)',
+            backgroundSize: '200% 200%',
+            backgroundRepeat: 'no-repeat',
+          }}
+        />
         <p className="text-gray-600 mt-4 text-lg font-semibold text-justify sm:text-lg md:text-center">An overview of my academic background, reflecting a continuous journey of learning, growth, and intellectual development.</p>
       </div>
 

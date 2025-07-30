@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { RxSlash } from "react-icons/rx";
-
 import { useState, useEffect } from 'react';
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -35,11 +34,11 @@ const Navbar = () => {
   ];
   return (
     <nav className={`fixed top-0 w-full z-50 transition duration-300 px-4 sm:px-6 md:px-10 lg:px-[10vw] xl:px-[20vw] ${isScrolled ? "bg-[#0d6efd]/30 backdrop-blur-md shadow-md" : "bg-transparent"}`}>
-      <div className="py-4 flex items-center justify-between flex-wrap gap-y-3">
+      <div className="py-4 flex items-center justify-between gap-x-6 flex-nowrap">
 
         {/* Logo */}
         <motion.div
-          animate={{ scale: [1, 1.1, 1] }}
+          animate={{ scale: [1, 1.2, 1] }}
           transition={{
             duration: 1.1,
             repeat: Infinity,
@@ -56,15 +55,18 @@ const Navbar = () => {
         </motion.div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex flex-1 justify-center">
-          <ul className="flex flex-wrap gap-x-6">
+        <div className="hidden md:flex justify-center">
+          <ul className="flex gap-x-6 whitespace-nowrap">
             {menuItems.map((item) => (
               <li key={item.id}>
-                <button onClick={() => handleMenuItemClick(item.id)} className={`font-bold cursor-pointer hover:scale-110 transition-transform hover:text-[#8245ec] ${activeSection === item.id ? "text-[#8245ec]" : ""}`}>{item.label}</button>
+                <button onClick={() => handleMenuItemClick(item.id)} className={`font-bold cursor-pointer hover:scale-110 transition-transform hover:text-[#8245ec] ${activeSection === item.id ? "text-[#8245ec]" : ""}`}>
+                  {item.label}
+                </button>
               </li>
             ))}
           </ul>
         </div>
+
 
         {/* Desktop Social Icons */}
         <div className="hidden md:flex space-x-4">

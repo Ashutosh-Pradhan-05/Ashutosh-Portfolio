@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { BsBuildings } from "react-icons/bs";
 import { experiences } from "../../constants";
 import { IoLocationOutline, IoCalendarOutline } from "react-icons/io5";
@@ -13,7 +14,23 @@ const Experience = () => {
       {/* Section Title */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold">EXPERIENCE</h2>
-        <div className="w-72 h-3 bg-gradient-to-r from-[#fc466b] to-[#3f5efb] mx-auto mt-2"></div>
+        {/* <div className="w-72 h-3 bg-gradient-to-r from-[#fc466b] to-[#3f5efb] mx-auto mt-2"></div> */}
+        <motion.div
+          animate={{
+            backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+          }}
+          transition={{
+            duration: 1,
+            repeat: Infinity,
+            ease: 'easeInOut',
+          }}
+          className="w-72 h-3 mx-auto mt-2 bg-gradient-to-r from-[#fc466b] to-[#3f5efb] bg-[length:200%_200%]"
+          style={{
+            backgroundImage: 'linear-gradient(to right, #fc466b, #3f5efb)',
+            backgroundSize: '200% 200%',
+            backgroundRepeat: 'no-repeat',
+          }}
+        />
         <p className="text-gray-600 mt-4 text-lg font-semibold text-justify sm:text-lg md:text-center">A summary of my work experience and the responsibilities I have undertaken with these organizations.</p>
       </div>
 

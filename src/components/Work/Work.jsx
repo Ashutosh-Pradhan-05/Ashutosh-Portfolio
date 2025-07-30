@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { IoEye } from "react-icons/io5";
 import { projects } from "../../constants";
 import { LuExternalLink } from "react-icons/lu";
@@ -22,7 +23,23 @@ const Work = () => {
       {/* Section Title */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold">PROJECTS</h2>
-        <div className="w-72 h-3 bg-gradient-to-r from-[#fc466b] to-[#3f5efb] mx-auto mt-2"></div>
+        {/* <div className="w-72 h-3 bg-gradient-to-r from-[#fc466b] to-[#3f5efb] mx-auto mt-2"></div> */}
+        <motion.div
+          animate={{
+            backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+          }}
+          transition={{
+            duration: 1,
+            repeat: Infinity,
+            ease: 'easeInOut',
+          }}
+          className="w-72 h-3 mx-auto mt-2 bg-gradient-to-r from-[#fc466b] to-[#3f5efb] bg-[length:200%_200%]"
+          style={{
+            backgroundImage: 'linear-gradient(to right, #fc466b, #3f5efb)',
+            backgroundSize: '200% 200%',
+            backgroundRepeat: 'no-repeat',
+          }}
+        />
         <p className="text-gray-600 mt-4 text-lg font-semibold text-justify sm:text-lg md:text-center">A curated selection of projects that demonstrate my technical expertise, problem-solving abilities, and hands-on experience across diverse technologies and development environments. </p>
       </div>
 
@@ -33,11 +50,11 @@ const Work = () => {
             key={project.id}
             className="border border-white bg-gray-900 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden hover:shadow-purple-500/90 hover:-translate-y-2 transition-transform duration-300"
           >
-            <div className="p-4">
+            <div className="p-4" onClick={() => handleOpenModal(project)}>
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full max-h-80 object-cover rounded-xl"
+                className="w-full max-h-80 object-cover rounded-xl cursor-pointer transition-transform duration-300 hover:scale-105"
               />
             </div>
             <div className="p-6">
@@ -81,7 +98,7 @@ const Work = () => {
             <div className="flex justify-end p-4">
               <button
                 onClick={handleCloseModal}
-                className="text-white text-3xl font-bold hover:text-purple-500"
+                className="text-white text-3xl font-bold hover:text-purple-500 cursor-pointer"
               >
                 &times;
               </button>
@@ -104,7 +121,7 @@ const Work = () => {
                     href={selectedProject.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-purple-600 hover:bg-purple-800 text-white text-xs lg:text-sm font-semibold px-1 py-1 rounded-lg transition duration-300 flex items-center gap-1"
+                    className="bg-purple-600 hover:bg-purple-800 text-white text-xs lg:text-sm font-semibold px-1 py-0.5 rounded-lg transition duration-300 flex items-center gap-1"
                   >
                     View <LuExternalLink className="text-white text-sm lg:text-base" />
                   </a>

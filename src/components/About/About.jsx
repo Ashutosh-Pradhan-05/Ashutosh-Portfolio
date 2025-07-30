@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion";
 import Tilt from 'react-parallax-tilt';
 import Typewriter from 'typewriter-effect';
 import profileImage from '../../assets/profile.jpg'
@@ -9,7 +10,26 @@ const About = () => {
         {/* left side */}
         <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold  mb-2 leading-tight">Hi, I am</h1>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight text-[#0d6efd]">Ashutosh Pradhan</h2>
+          {/* <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight text-[#0d6efd]">Ashutosh Pradhan</h2> */}
+          <motion.h2
+            animate={{
+              backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+            }}
+            transition={{
+              duration: 1,
+              repeat: Infinity,
+              ease: 'easeInOut',
+            }}
+            className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight bg-gradient-to-r from-[#fc466b] to-[#3f5efb] bg-clip-text text-transparent bg-[length:200%_200%]"
+            style={{
+              backgroundImage: 'linear-gradient(to right, #fc466b, #3f5efb)',
+              backgroundSize: '200% 200%',
+              display: 'inline-block',
+            }}
+          >
+            Ashutosh Pradhan
+          </motion.h2>
+
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
             <span>I am a </span>
             <Typewriter
@@ -18,16 +38,16 @@ const About = () => {
                   .pauseFor(100) // Initial delay
                   .typeString('MERN Stack Developer')
                   .pauseFor(1000)
-                  .deleteAll(20) // Delete speed = 20ms per character
+                  .deleteAll(15) // Delete speed = 15ms per character
                   .typeString('Full Stack Developer')
                   .pauseFor(1000)
-                  .deleteAll(20)
+                  .deleteAll(15)
                   .typeString('React Developer')
                   .pauseFor(1000)
-                  .deleteAll(20)
+                  .deleteAll(15)
                   .typeString('Programmer')
                   .pauseFor(1000)
-                  .deleteAll(20)
+                  .deleteAll(15)
                   .start();
               }}
               options={{
@@ -64,7 +84,7 @@ const About = () => {
           {/* CV Button & Contact Me Button */}
           <div className='flex flex-col sm:flex-row items-center justify-center sm:justify-start md:gap-4 lg:ms-16 md:mt-14'>
             <a
-              href="https://drive.google.com/file/d/1NbA_T6HHqTeuHbMWn_oSbUF7SpNwgSE4/view"
+              href="https://drive.google.com/file/d/1OAX09f7HJqV9gFMZXucCxQiemBbn2Y85/view"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-semibold transition duration-300 transform hover:scale-105 bg-gradient-to-r from-[#fc466b] to-[#3f5efb] hover:from-[#6f3de0] hover:to-[#9333ea]"
