@@ -46,7 +46,7 @@ Optimized for both **performance** and **scalability**, this portfolio serves as
 
 ### 2️⃣ Skills Section
 
-<img width="1881" height="956" alt="skills" src="https://github.com/user-attachments/assets/4839e70e-08df-418a-af7d-3459e37780e8" />
+<img width="1870" height="952" alt="Main" src="https://github.com/user-attachments/assets/00bdfbd5-34a1-4918-abc8-039029bcc5b7" />
 
 
 ### 3️⃣ Experience Section
