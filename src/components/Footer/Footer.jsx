@@ -22,14 +22,18 @@ const Footer = () => {
 
         {/* Name / Logo */}
         <motion.span
-          animate={{ scale: [1, 1.3, 1] }}
+          animate={{
+            scale: [1, 1.3, 1],
+            color: ["#0d6efd", "#ec4899", "#0d6efd"], // blue → pink → blue
+          }}
           transition={{
             duration: 1.1,
             repeat: Infinity,
             repeatType: "loop",
             ease: "easeInOut",
           }}
-          className="flex items-center text-xl font-semibold text-[#0d6efd] cursor-default"
+          className="flex items-center text-xl font-semibold cursor-pointer"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           <span className="me-[-0.5px]">
             <FaLessThan />
@@ -124,13 +128,26 @@ const Footer = () => {
               </a>
 
               {/* Scroll to Top Icon */}
-              <button
+              <motion.button
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                className="p-2 rounded-full hover:bg-purple-600 text-white bg-pink-500 transition duration-300 shadow-md hover:scale-110"
+                className="p-2 rounded-full text-white bg-gradient-to-r from-pink-500 to-purple-600 shadow-lg cursor-pointer"
                 title="Back to Top"
+                animate={{
+                  scale: [1, 1.15, 1], // subtle bounce
+                  boxShadow: [
+                    "0 0 0px rgba(255, 105, 180, 0.6)",
+                    "0 0 20px rgba(255, 105, 180, 0.6)",
+                    "0 0 0px rgba(255, 105, 180, 0.6)"
+                  ], // glowing effect
+                }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
               >
-                <FaArrowUp size={14} />
-              </button>
+                <FaArrowUp size={16} />
+              </motion.button>
             </span>
           </p>
         </div>
