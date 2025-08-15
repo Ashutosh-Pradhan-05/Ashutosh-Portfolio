@@ -78,7 +78,7 @@ Optimized for both **performance** and **scalability**, this portfolio serves as
 ## 📞 Contact
 
 Designed and Developed by **Ashutosh Pradhan**💝
-- **Portfolio**: [Personal Portfolio](https://ashutoshdevportfolio.netlify.app)
+- **Portfolio**: [https://ashutoshdevportfolio.netlify.app](https://ashutoshdevportfolio.netlify.app)
 - **Email**: [contactwithashuind@gmail.com](mailto:contactwithashuind@gmail.com)
 - **LinkedIn**: [https://www.linkedin.com/in/ashutosh-pradhan05](https://www.linkedin.com/in/ashutosh-pradhan05)
 - **Twitter**: [https://x.com/Ashutoshtwitind](https://x.com/Ashutoshtwitind)
