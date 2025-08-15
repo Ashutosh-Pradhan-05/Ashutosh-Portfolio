@@ -27,11 +27,13 @@ import cLogo from './assets/tech_logo/c.png';
 // tools
 import gitLogo from './assets/tech_logo/git.png';
 import githubLogo from './assets/tech_logo/githublogo.png';
-import vscodeLogo from './assets/tech_logo/vscode.png';
 import postmanLogo from './assets/tech_logo/postman.png';
-import mcLogo from './assets/tech_logo/mc.png';
-import netlifyLogo from './assets/tech_logo/netlifylogo.png';
 import emailjsLogo from './assets/tech_logo/emailjs.png';
+import vscodeLogo from './assets/tech_logo/vscode.png';
+import vitelogo from './assets/tech_logo/vite.png';
+import netlifyLogo from './assets/tech_logo/netlifylogo.png';
+import vercellogo from './assets/tech_logo/vercel.png';
+import mcLogo from './assets/tech_logo/mc.png';
 import npmLogo from './assets/tech_logo/npm.png';
 
 // Experience Section Logo's
@@ -98,8 +100,10 @@ export const SkillsInfo = [
       { name: 'GitHub', logo: githubLogo },
       { name: 'Postman', logo: postmanLogo },
       { name: 'EmailJS', logo: emailjsLogo },
+      { name: 'Vite', logo: vitelogo },
       { name: 'VS Code', logo: vscodeLogo },
       { name: 'Netlify', logo: netlifyLogo },
+      { name: 'Vercel', logo: vercellogo },
       { name: 'Compass', logo: mcLogo },
       { name: 'NPM', logo: npmLogo },
     ],

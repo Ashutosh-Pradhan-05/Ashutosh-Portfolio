@@ -96,8 +96,8 @@ const Footer = () => {
         {/* Copyright */}
         {/* Copyright + Scroll to Top */}
         <div className="text-base sm:text-lg md:text-[18px] mt-4 w-full text-center">
-          <p className="m-0 flex flex-wrap items-center justify-center gap-2">
-            Designed with <GiSelfLove className="text-red-600" size={24} /> by
+          <div className="m-0 flex flex-wrap items-center justify-center gap-2">
+            Designed & Developed by
             <motion.span
               animate={{
                 backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
@@ -107,49 +107,36 @@ const Footer = () => {
                 repeat: Infinity,
                 ease: 'easeInOut',
               }}
-              className="font-bold bg-gradient-to-r from-[#fc466b] to-[#3f5efb] bg-clip-text text-transparent bg-[length:200%_200%]"
+              className="font-bold bg-gradient-to-r from-[#fc466b] to-[#3f5efb] bg-clip-text text-transparent bg-[length:200%_200%] inline-flex items-center gap-1"
               style={{
-                backgroundImage: 'linear-gradient(to right, #fc466b, #3f5efb)',
-                display: 'inline-block',
+                backgroundImage: 'linear-gradient(to right, #fc466b, #3f5efb)'
               }}
             >
-              Ashutosh Pradhan
+              Ashutosh Pradhan <GiSelfLove className="text-red-600" size={22} />
             </motion.span>
             &copy; 2025 All rights reserved.
-
-            {/* Email + Arrow side-by-side */}
-            <span className="flex items-center gap-2">
-              <a
-                href="mailto:contactwithashuind@gmail.com"
-                title="Send email to Ashutosh Pradhan"
-                className="hover:underline text-blue-600"
-              >
-                contactwithashuind@gmail.com
-              </a>
-
-              {/* Scroll to Top Icon */}
-              <motion.button
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                className="p-2 rounded-full text-white bg-gradient-to-r from-pink-500 to-purple-600 shadow-lg cursor-pointer"
-                title="Back to Top"
-                animate={{
-                  scale: [1, 1.15, 1], // subtle bounce
-                  boxShadow: [
-                    "0 0 0px rgba(255, 105, 180, 0.6)",
-                    "0 0 20px rgba(255, 105, 180, 0.6)",
-                    "0 0 0px rgba(255, 105, 180, 0.6)"
-                  ], // glowing effect
-                }}
-                transition={{
-                  duration: 1.5,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              >
-                <FaArrowUp size={16} />
-              </motion.button>
-            </span>
-          </p>
+            {/* Scroll to Top using Upper Icon */}
+            <motion.button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="p-2 rounded-full text-white bg-gradient-to-r from-pink-500 to-purple-600 shadow-lg cursor-pointer"
+              title="Back to Top"
+              animate={{
+                scale: [0.8, 1, 0.8], // subtle bounce
+                boxShadow: [
+                  "0 0 0px rgba(255, 105, 180, 0.6)",
+                  "0 0 50px rgba(255, 105, 180, 0.6)",
+                  "0 0 0px rgba(255, 105, 180, 0.6)"
+                ], // glowing effect
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            >
+              <FaArrowUp size={16} />
+            </motion.button>
+          </div>
         </div>
 
       </div>

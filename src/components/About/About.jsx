@@ -87,13 +87,13 @@ const About = () => {
               href="https://drive.google.com/file/d/1OAX09f7HJqV9gFMZXucCxQiemBbn2Y85/view"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-semibold transition duration-300 transform hover:scale-105 bg-gradient-to-r from-[#fc466b] to-[#3f5efb] hover:from-[#6f3de0] hover:to-[#9333ea]"
+              className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-semibold transition duration-300 transform hover:scale-105 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-[#6f3de0] hover:to-[#9333ea]"
             >
               DOWNLOAD CV
             </a>
             <a
               href="#contact"
-              className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-semibold transition duration-300 transform hover:scale-105 bg-gradient-to-r from-[#3f5efb] to-[#fc466b] hover:from-[#6f3de0] hover:to-[#9333ea]"
+              className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-semibold transition duration-300 transform hover:scale-105 bg-gradient-to-r from-purple-600 to-pink-500 hover:from-[#6f3de0] hover:to-[#9333ea]"
             >
               CONTACT ME
             </a>
