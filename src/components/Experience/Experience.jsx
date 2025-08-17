@@ -31,7 +31,7 @@ const Experience = () => {
             backgroundRepeat: 'no-repeat',
           }}
         />
-        <p className="text-gray-600 mt-4 text-lg font-semibold text-justify sm:text-lg md:text-center">A summary of my work experience and the responsibilities I have undertaken with these organizations.</p>
+        <p className="text-gray-600 mt-4 text-lg font-semibold text-justify sm:text-lg md:text-center">A glimpse of my work experience and the roles & responsibilities I have undertaken with these tech organizations.</p>
       </div>
 
       {/* Experience Timeline */}

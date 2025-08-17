@@ -40,7 +40,7 @@ const Work = () => {
             backgroundRepeat: 'no-repeat',
           }}
         />
-        <p className="text-gray-600 mt-4 text-lg font-semibold text-justify sm:text-lg md:text-center">A curated selection of projects that demonstrate my technical expertise, problem-solving abilities, and hands-on experience across diverse technologies and development environments. </p>
+        <p className="text-gray-600 mt-4 text-lg font-semibold text-justify sm:text-lg md:text-center">A curated selection of my personal projects that demonstrate my technical expertise, problem-solving abilities, critical thinking skills, real-world projects and hands-on experience across diverse technologies and development environments. </p>
       </div>
 
       {/* Projects Grid */}

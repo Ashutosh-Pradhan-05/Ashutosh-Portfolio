@@ -9,7 +9,7 @@ const About = () => {
       <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8 md:gap-16 lg:gap-20">
         {/* left side */}
         <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold  mb-2 leading-tight">Hi, I am</h1>
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold  mb-2 leading-tight">Hi, I am</h1>
           {/* <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight text-[#0d6efd]">Ashutosh Pradhan</h2> */}
           <motion.h2
             animate={{
@@ -20,7 +20,7 @@ const About = () => {
               repeat: Infinity,
               ease: 'easeInOut',
             }}
-            className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight bg-gradient-to-r from-[#fc466b] to-[#3f5efb] bg-clip-text text-transparent bg-[length:200%_200%]"
+            className="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight bg-gradient-to-r from-[#fc466b] to-[#3f5efb] bg-clip-text text-transparent bg-[length:200%_200%]"
             style={{
               backgroundImage: 'linear-gradient(to right, #fc466b, #3f5efb)',
               backgroundSize: '200% 200%',

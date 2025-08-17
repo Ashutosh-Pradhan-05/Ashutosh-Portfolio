@@ -97,7 +97,7 @@ const Footer = () => {
         {/* Copyright + Scroll to Top */}
         <div className="text-base sm:text-lg md:text-[18px] mt-4 w-full text-center">
           <div className="m-0 flex flex-wrap items-center justify-center gap-2">
-            Designed & Developed by
+            Designed & Developed By
             <motion.span
               animate={{
                 backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
@@ -138,7 +138,6 @@ const Footer = () => {
             </motion.button>
           </div>
         </div>
-
       </div>
     </footer>
   );
