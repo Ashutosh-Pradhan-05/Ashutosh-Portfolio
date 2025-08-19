@@ -66,6 +66,7 @@ const Work = () => {
                 {project.description}
               </p>
               <div className="mb-4">
+                <h5 className="font-medium text-white mb-2">Used Tech Stacks:</h5>
                 {project.tags.map((tag, index) => (
                   <span
                     key={index}
@@ -131,6 +132,7 @@ const Work = () => {
                   {selectedProject.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
+                  <h5 className="font-medium text-white">Used Tech Stacks:</h5>
                   {selectedProject.tags.map((tag, index) => (
                     <span
                       key={index}
@@ -140,8 +142,6 @@ const Work = () => {
                     </span>
                   ))}
                 </div>
-
-
               </div>
             </div>
           </div>

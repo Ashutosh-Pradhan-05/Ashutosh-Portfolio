@@ -155,7 +155,7 @@ export const experiences = [
     website: "https://internshipstudio.com/",
     location: "Pune, IN [Remote]",
     date: "Feb 2024 - May 2024",
-    desc: "Completed a remote internship focused on AWS cloud architecture, deployment, and infrastructure automation. Learned core AWS services like EC2, S3, IAM, Lambda, and Cloud Formation to build scalable solutions.",
+    desc: "Completed a remote internship focused on AWS cloud architecture, deployment and infrastructure automation. Learned core AWS services like EC2, S3, IAM, Lambda and Cloud Formation to build scalable solutions.",
     skills: [
       "AWS",
       "S3",
@@ -186,7 +186,7 @@ export const education = [
     location: "Jajpur, Odisha, India",
     date: "Jun 2018 - Mar 2020",
     grade: "64.83%",
-    desc: "I have completed my Higher Secondary Education [Class 11 and 12] at Gokarnika Higher Secondary School, Jajpur, under the Council of Higher Secondary Education [CHSE], Odisha board, specializing in Physics, Chemistry, Mathematics, and Biology [PCMB]. This academic curriculum provided me with a balanced and in-depth understanding of both mathematical reasoning and life sciences. Throughout the course, I actively engaged in comprehensive laboratory work in Physics, Chemistry, and Biology, which strengthened my conceptual knowledge through hands-on experiments. These included electrical circuit analysis, mechanics demonstrations, chemical titrations, qualitative analysis, and biological specimen examination under microscopy enhancing my analytical thinking and practical skills. Beyond academics, I participated in extracurricular activities such as volleyball and badminton, which played a vital role in developing my leadership, team collaboration, and time management abilities. These activities enriched my overall school experience and contributed to my personal growth. My education at Gokarnika Higher Secondary School laid a solid foundation for my technical and interpersonal development, both of which have been instrumental in my academic and professional journey.",
+    desc: "I have completed my Higher Secondary Education [Both Class 11th and 12th] at Gokarnika Higher Secondary School, Jajpur, under the Council of Higher Secondary Education [CHSE], Odisha board, specializing in Physics, Chemistry, Mathematics and Biology [PCMB]. This academic curriculum provided me with a balanced and in-depth understanding of both mathematical reasoning and life sciences. Throughout the course, I actively engaged in comprehensive laboratory work in Physics, Chemistry and Biology, which strengthened my conceptual knowledge through hands-on experiments. These included electrical circuit analysis, mechanics demonstrations, chemical titrations, qualitative analysis and biological specimen examination under microscopy enhancing my analytical thinking and practical skills. Beyond academics, I participated in extracurricular activities such as volleyball and badminton, which played a vital role in developing my leadership, team collaboration and time management abilities. These activities enriched my overall school experience and contributed to my personal growth. My education at Gokarnika Higher Secondary School laid a solid foundation for my technical and interpersonal development, both of which have been instrumental in my academic and professional journey.",
   },
   {
     id: 2,
@@ -195,7 +195,7 @@ export const education = [
     location: "Jajpur, Odisha, India",
     date: "Jun 2008 - Mar 2018",
     grade: "67.33%",
-    desc: "I have completed my primary and secondary education at Hatibari Nodal High School, Jajpur, under the Board of Secondary Education [BSE], Odisha. My academic journey began here as a young student in Class 1, and over the course of nearly a decade, I progressed through every stage of foundational education, ultimately completing my Class 10. This long-standing association with the school played a crucial role in shaping my academic discipline, curiosity, and work ethic from the grassroots level. The structured curriculum, along with the values instilled during these formative years, laid a strong foundation for my future studies and personal development. Hatibari Nodal High School was not just the starting point of my educational path it was where my aspirations began to take shape and where I developed the core habits that continue to guide me today.",
+    desc: "I have completed my primary and secondary education at Hatibari Nodal High School, Jajpur, under the Board of Secondary Education [BSE], Odisha. My academic journey began here as a young student in Class 1 and over the course of nearly a decade, I progressed through every stage of foundational education, ultimately completing my Class 10. This long-standing association with the school played a crucial role in shaping my academic discipline, curiosity and work ethic from the grassroots level. The structured curriculum, along with the values instilled during these formative years, laid a strong foundation for my future studies and personal development. Hatibari Nodal High School was not just the starting point of my educational path it was where my aspirations began to take shape and where I developed the core habits that continue to guide me today.",
     degree: "10th [BSE] - Schooling",
   },
 ];

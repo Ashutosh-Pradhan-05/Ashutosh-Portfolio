@@ -59,7 +59,7 @@ const About = () => {
             />
           </h3>
           {/* About Me Paragraph */}
-          <p className="text-base text-justify sm:text-lg md:text-lg text-gray-600 mb-10 mt-4 leading-relaxed indent-14">Versatile and technically proficient Computer Science graduate with hands-on experience building responsive web applications using React.js, Node.js, Express.js, Tailwind CSS, and Bootstrap. Skilled in full-stack development, RESTful API integration and modern JavaScript frameworks. Committed to delivering clean, maintainable code in Agile environments and collaborating effectively within engineering teams to build scalable, user-centric solutions.</p>
+          <p className="text-base text-justify sm:text-lg md:text-lg text-gray-600 mb-10 mt-4 leading-relaxed indent-14">Versatile and technically proficient Computer Science graduate with hands-on experience building responsive web applications using React.js, Node.js, Express.js, MongoDB, Tailwind CSS and Bootstrap. Skilled in full-stack development, RESTful API integration and modern JavaScript libraries and frameworks. Committed to delivering clean, maintainable code in Agile environments and collaborating effectively within engineering teams to build pixel-perfect, scalable, user-centric solutions.</p>
 
         </div>
 
