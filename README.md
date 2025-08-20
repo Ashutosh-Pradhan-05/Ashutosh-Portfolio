@@ -7,10 +7,9 @@
 
 This project is a **fully responsive personal portfolio website** built with **React 19** and **Vite**, designed to deliver a seamless user experience across both mobile and desktop platforms. It features a **modern, clean UI** styled with **Tailwind CSS** and includes engaging **interactive animations** powered by libraries like `react-parallax-tilt`, `framer-motion` and `react-typing-effect`.
 
-The application is structured using **reusable, modular components**, with prop validation handled via `prop-types`. It supports **client-side routing** using `react-router-dom`, enabling smooth navigation between sections. The **typewriter-effect** library is used for dynamic text animations, while **EmailJS** integration powers a real-time, working contact form. Additionally, **react-toastify** provides non-intrusive toast notifications for user feedback.
+The application is structured using **reusable, modular components**, with prop validation handled via `prop-types`. It supports **client-side routing** using `react-router-dom`, enabling smooth navigation between sections. The **typewriter-effect** library is used for dynamic text animations, while **EmailJS** integration powers a real-time, working contact form. Additionally, **react-toastify** provides non-intrusive toast notifications for user feedback, and **Google Analytics** integration helps track visitor insights and engagement.
 
 Optimized for both **performance** and **scalability**, this portfolio serves as a professional and visually engaging platform to showcase my **skills**, **experience**, **projects** and **educational background**.
-
 ---
 
 ## 🚀 Tech Stack
@@ -31,10 +30,11 @@ Optimized for both **performance** and **scalability**, this portfolio serves as
 - 📧 `@emailjs/browser` : Get In Touch form email service  
 - 📦 `prop-types` : Component props validation
 
-**Tooling**  
+**Tooling**
 - 🧹 ESLint  
 - ⚙️ Tailwind Plugin via `@tailwindcss/vite`  
 - 🧪 Vite Dev, Build and Preview Scripts
+- 📊 Google Analytics : Visitor tracking & insights
 
 ---
 ## 📸 Project Section Screenshots
