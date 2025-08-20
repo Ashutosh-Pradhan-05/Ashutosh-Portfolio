@@ -10,6 +10,7 @@ This project is a **fully responsive personal portfolio website** built with **R
 The application is structured using **reusable, modular components**, with prop validation handled via `prop-types`. It supports **client-side routing** using `react-router-dom`, enabling smooth navigation between sections. The **typewriter-effect** library is used for dynamic text animations, while **EmailJS** integration powers a real-time, working contact form. Additionally, **react-toastify** provides non-intrusive toast notifications for user feedback, and **Google Analytics** integration helps track visitor insights and engagement.
 
 Optimized for both **performance** and **scalability**, this portfolio serves as a professional and visually engaging platform to showcase my **skills**, **experience**, **projects** and **educational background**.
+
 ---
 
 ## 🚀 Tech Stack
