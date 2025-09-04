@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio [Vite + React + Tailwind CSS]
 
-<img width="1870" height="952" alt="Main" src="https://github.com/user-attachments/assets/98bbceca-c8d9-4974-afa5-37501740acde" />
+<img width="1875" height="945" alt="ReactPortfolio" src="https://github.com/user-attachments/assets/160354bb-3e8a-4cd7-8ed0-11d554bbffb8" />
 
 
 ## 📖 Overview
