@@ -42,7 +42,7 @@ Optimized for both **performance** and **scalability**, this portfolio serves as
 
 ### 1️⃣ About Section
 
-<img width="1870" height="952" alt="Main" src="https://github.com/user-attachments/assets/2b48569a-d6c3-4f1e-89bd-ed86a7eebec6" />
+<img width="1875" height="945" alt="ReactPortfolio" src="https://github.com/user-attachments/assets/b7dbd637-46ec-42a5-8980-a16d051a0042" />
 
 
 ### 2️⃣ Skills Section
