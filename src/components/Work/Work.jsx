@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { IoEye } from "react-icons/io5";
+import { ImUndo2 } from "react-icons/im";
 import { projects } from "../../constants";
 import { LuExternalLink } from "react-icons/lu";
 
@@ -99,10 +100,13 @@ const Work = () => {
             <div className="flex justify-end p-4">
               <button
                 onClick={handleCloseModal}
-                className="text-white text-3xl font-bold hover:text-purple-500 cursor-pointer"
+                className="bg-purple-600 hover:bg-purple-800 text-white px-3 py-1 rounded-xl text-sm sm:text-base font-semibold flex items-center justify-center gap-2 cursor-pointer"
               >
-                &times;
+                <ImUndo2 className="text-lg sm:text-xl" />
+                Back
               </button>
+
+
             </div>
 
             <div className="flex flex-col">

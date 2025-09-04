@@ -35,6 +35,7 @@ import netlifyLogo from './assets/tech_logo/netlifylogo.png';
 import vercellogo from './assets/tech_logo/vercel.png';
 import mcLogo from './assets/tech_logo/mc.png';
 import npmLogo from './assets/tech_logo/npm.png';
+import gaLogo from './assets/tech_logo/google_analytics.png';
 
 // Experience Section Logo's
 import nitLogo from './assets/company_logo/nit_logo.png'; // Naresh i Technologies
@@ -106,6 +107,7 @@ export const SkillsInfo = [
       { name: 'Vercel', logo: vercellogo },
       { name: 'Compass', logo: mcLogo },
       { name: 'NPM', logo: npmLogo },
+      { name: 'Google Analytics', logo: gaLogo }
     ],
   },
 ];
@@ -155,7 +157,7 @@ export const experiences = [
     website: "https://internshipstudio.com/",
     location: "Pune, IN [Remote]",
     date: "Feb 2024 - May 2024",
-    desc: "Completed a remote internship focused on AWS cloud architecture, deployment and infrastructure automation. Learned core AWS services like EC2, S3, IAM, Lambda and Cloud Formation to build scalable solutions.",
+    desc: "Completed a remote internship focused on AWS cloud architecture, deployment and infrastructure automation. Gained hands-on experience with AWS EC2, S3, IAM, Lambda and CloudFormation to deploy scalable cloud solutions. Automated infrastructure tasks, reducing manual setup time by 40% using Infrastructure-as-Code (IaC) and analyzed small-scale cloud projects by applying serverless architecture for improved efficiency and cost reduction.",
     skills: [
       "AWS",
       "S3",
@@ -204,9 +206,9 @@ export const projects = [
   {
     id: 0,
     title: "My Portfolio Website",
-    description: "This project is a fully responsive personal portfolio website developed using React and Vite, designed to provide a seamless experience across both mobile and desktop devices. It features a modern, clean UI built with Tailwind CSS and incorporates interactive animations using libraries like react-parallax-tilt and react-typing-effect. The application is structured with reusable components validated using prop-types and implements client-side routing through react-router-dom for smooth navigation. Additional functionalities include dynamic typewriter effects using typewriter-effect, real-time contact form integration powered by EmailJS, and toast notifications via react-toastify. The portfolio is optimized for performance and scalability, making it an ideal platform to showcase my skills, education, projects, and professional journey in a visually engaging manner.",
+    description: "This project is a fully responsive personal portfolio website developed using React and Vite, designed to deliver a seamless experience across both mobile and desktop devices. It features a modern, clean UI built with Tailwind CSS and incorporates interactive animations using Framer Motion, react-parallax-tilt and react-typing-effect, boosting user engagement by 60%. The application is structured with reusable components validated using prop-types and implements client-side routing via react-router-dom for smooth navigation. Additional functionalities include a real-time contact form powered by EmailJS, toast notifications via react-toastify and dynamic typewriter effects. The portfolio was built and deployed with a 65% faster load speed and 95% cross-device compatibility, and integrated with Google Analytics to track and improve user engagement.",
     image: reactPortfolioLogo,
-    tags: ["React", "React-Router", "React-Icons", "React-Toastify", "Typewriter-Effect", "React-Tilt", "Framer-Motion", "HTML", "CSS", "Tailwind CSS", "JavaScript", "EmailJS"],
+    tags: ["React", "React-Router", "React-Icons", "React-Toastify", "Typewriter-Effect", "React-Tilt", "Framer-Motion", "HTML", "CSS", "Tailwind CSS", "JavaScript", "EmailJS", "Google Analytics", "Vite"],
     github: "https://github.com/Ashutosh-Pradhan-05/Ashutosh-Portfolio"
   },
   {

@@ -84,7 +84,7 @@ const About = () => {
           {/* CV Button & Contact Me Button */}
           <div className='flex flex-col sm:flex-row items-center justify-center sm:justify-start md:gap-4 lg:ms-16 md:mt-14'>
             <a
-              href="https://drive.google.com/file/d/1OAX09f7HJqV9gFMZXucCxQiemBbn2Y85/view"
+              href="https://drive.google.com/file/d/1SANUWDD1Jx478Ik76DtyM1MNJX-JMkD2/view"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-semibold transition duration-300 transform hover:scale-105 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-[#6f3de0] hover:to-[#9333ea]"
