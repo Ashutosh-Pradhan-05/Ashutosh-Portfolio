@@ -11,9 +11,8 @@ The application is structured using **reusable, modular components**, with prop 
 
 Optimized for both **performance** and **scalability**, this portfolio serves as a professional and visually engaging platform to showcase my **skills**, **experience**, **projects** and **educational background**.
 
----
 
-## 🚀 Tech Stack
+## 🚀 Tech Stacks
 
 **Core Technologies**  
 - ⚛️ React 19
