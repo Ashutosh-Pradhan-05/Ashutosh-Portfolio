@@ -5,7 +5,6 @@ import { VscCode } from "react-icons/vsc";
 import "react-toastify/dist/ReactToastify.css";
 import React, { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import { FaLessThan, FaGreaterThan } from "react-icons/fa";
 
 const Contact = () => {
   const form = useRef();

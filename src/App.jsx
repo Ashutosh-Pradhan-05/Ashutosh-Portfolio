@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer"
 import Navbar from "./components/Navbar/Navbar"
 import Skills from "./components/Skills/Skills"
 import Work from "./components/Work/Work"
+import Certification from "./components/Certification/certification"
 import BlurBlob from "./BlurBlob"
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Experience />
         <Work />
         <Education />
+        <Certification />
         <Contact />
         <Footer />
       </div>

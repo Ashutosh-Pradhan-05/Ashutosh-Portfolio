@@ -55,6 +55,16 @@ import bmiLogo from './assets/work_logo/bmi.png';                        // BMI 
 import cityLogo from './assets/work_logo/city.png';                      //City list unlist CRUD Operation
 import clkLogo from './assets/work_logo/clock.png';                      //Real-Time Analog Clock
 
+// Certification Section Logo's
+import ocideveloper from './assets/certification_logo/OCI-Developer.png';      //OCI Certified Developer
+import ocifoundation from './assets/certification_logo/OCI-Foundation.png';    //OCI Certified Foundation
+import wiprojava from './assets/certification_logo/Wipro-TalentNext.png';      //Wipro Certified in Java
+import oraclelogo from './assets/certification_logo/oracle.png';                  //Oracle Logo
+import wiprologo from './assets/certification_logo/wipro.png';                    //Wipro Logo
+import oracle from './assets/certification_logo/oracle1.png';                  //Oracle
+import wipro from './assets/certification_logo/wipro1.png';                    //Wipro
+
+
 export const SkillsInfo = [
   {
     title: 'Frontend Development',
@@ -121,7 +131,7 @@ export const experiences = [
     certificate: "https://drive.google.com/file/d/182bAnyjym2Sw4e1x-Fd1HZ_DtT9clX32",
     company: "Naresh i Technologies",
     website: "https://nareshit.com",
-    location: "Hyderabad, IN [On-site]",
+    location: "Hyderabad, IN • On-site",
     date: "Jul 2024 - Dec 2024",
     desc: "Completed an intensive six months offline training program in UI Full Stack Development, based in Hyderabad, India. This comprehensive program focused on hands-on learning and real-time project development, equipping me with the skills and confidence to build responsive websites and full-stack web applications from scratch.",
     skills: [
@@ -155,7 +165,7 @@ export const experiences = [
     certificate: "https://drive.google.com/file/d/1cbFkZIpojlj10tR8qdRllXao_FCjDaDv",
     company: "Internship Studio",
     website: "https://internshipstudio.com/",
-    location: "Pune, IN [Remote]",
+    location: "Pune, IN • Remote",
     date: "Feb 2024 - May 2024",
     desc: "Completed a remote internship focused on AWS cloud architecture, deployment and infrastructure automation. Gained hands-on experience with AWS EC2, S3, IAM, Lambda and CloudFormation to deploy scalable cloud solutions. Automated infrastructure tasks, reducing manual setup time by 40% using Infrastructure-as-Code (IaC) and analyzed small-scale cloud projects by applying serverless architecture for improved efficiency and cost reduction.",
     skills: [
@@ -173,22 +183,22 @@ export const education = [
   {
     id: 0,
     img: tatLogo,
-    degree: "B.Tech - CST",
+    degree: "Graduation • B.Tech · CSE",
     school: "Trident Academy of Technology",
     location: "Bhubaneswar, Odisha, India",
     date: "Sep 2020 - May 2024",
     grade: "8.23 CGPA",
-    desc: "During my B.Tech at Trident Academy of Technology, I developed a strong academic foundation in core areas of computer science and software engineering. My coursework included Data Structures and Algorithms [DSA], Object-Oriented Programming [OOP], Database Management Systems [DBMS], Web Development and Software Engineering, which equipped me with both theoretical knowledge and practical problem-solving skills. Beyond academics, I actively engaged in co-curricular activities and technical communities, including the Cyber Security Club and Coding Club, where I participated in workshops, hackathons and collaborative projects. These experiences significantly enhanced my technical capabilities, team collaboration and adaptability to real-world challenges. Overall, my time at Trident Academy played a pivotal role in shaping my technical proficiency and professional mindset, preparing me for a dynamic career in the tech industry.",
+    desc: "During my B.Tech at Trident Academy of Technology under Biju Patnaik University of Technology, I developed a strong academic foundation in core areas of computer science and software engineering. My coursework included Data Structures and Algorithms [DSA], Object-Oriented Programming [OOP], Database Management Systems [DBMS], Web Development and Software Engineering, which equipped me with both theoretical knowledge and practical problem-solving skills. Beyond academics, I actively engaged in co-curricular activities and technical communities, including the Cyber Security Club and Coding Club, where I participated in workshops, hackathons and collaborative projects. These experiences significantly enhanced my technical capabilities, team collaboration and adaptability to real-world challenges. Overall, my time at Trident Academy played a pivotal role in shaping my technical proficiency and professional mindset, preparing me for a dynamic career in the tech industry.",
   },
   {
     id: 1,
     img: ghssLogo,
-    degree: "12th [CHSE] - Science",
+    degree: "Intermediate • Science • CHSE",
     school: "Gokarnika Higher Secondary School",
     location: "Jajpur, Odisha, India",
     date: "Jun 2018 - Mar 2020",
     grade: "64.83%",
-    desc: "I have completed my Higher Secondary Education [Both Class 11th and 12th] at Gokarnika Higher Secondary School, Jajpur, under the Council of Higher Secondary Education [CHSE], Odisha board, specializing in Physics, Chemistry, Mathematics and Biology [PCMB]. This academic curriculum provided me with a balanced and in-depth understanding of both mathematical reasoning and life sciences. Throughout the course, I actively engaged in comprehensive laboratory work in Physics, Chemistry and Biology, which strengthened my conceptual knowledge through hands-on experiments. These included electrical circuit analysis, mechanics demonstrations, chemical titrations, qualitative analysis and biological specimen examination under microscopy enhancing my analytical thinking and practical skills. Beyond academics, I participated in extracurricular activities such as volleyball and badminton, which played a vital role in developing my leadership, team collaboration and time management abilities. These activities enriched my overall school experience and contributed to my personal growth. My education at Gokarnika Higher Secondary School laid a solid foundation for my technical and interpersonal development, both of which have been instrumental in my academic and professional journey.",
+    desc: "I completed my Higher Secondary Education [Class 11th and 12th] at Gokarnika Higher Secondary School, Jajpur, under CHSE, Odisha, with a specialization in Physics, Chemistry, Mathematics, and Biology [PCMB]. The curriculum offered a balanced understanding of mathematical and life sciences through extensive laboratory work, including experiments in circuits, mechanics, titrations, and microscopy, which enhanced my analytical and practical skills. Alongside academics, I actively participated in sports like volleyball and badminton, developing leadership, teamwork, and time management abilities. This education built a strong foundation for both my technical and interpersonal growth, shaping my academic and professional journey.",
   },
   {
     id: 2,
@@ -197,8 +207,8 @@ export const education = [
     location: "Jajpur, Odisha, India",
     date: "Jun 2008 - Mar 2018",
     grade: "67.33%",
-    desc: "I have completed my primary and secondary education at Hatibari Nodal High School, Jajpur, under the Board of Secondary Education [BSE], Odisha. My academic journey began here as a young student in Class 1 and over the course of nearly a decade, I progressed through every stage of foundational education, ultimately completing my Class 10. This long-standing association with the school played a crucial role in shaping my academic discipline, curiosity and work ethic from the grassroots level. The structured curriculum, along with the values instilled during these formative years, laid a strong foundation for my future studies and personal development. Hatibari Nodal High School was not just the starting point of my educational path it was where my aspirations began to take shape and where I developed the core habits that continue to guide me today.",
-    degree: "10th [BSE] - Schooling",
+    desc: "I completed my primary and secondary education at Hatibari Nodal High School, Jajpur, under the Board of Secondary Education [BSE], Odisha. Beginning from Class 1 and continuing through Class 10, this decade-long academic journey laid the foundation of my intellectual growth and personal discipline. The school’s structured curriculum and emphasis on holistic learning nurtured my curiosity, academic consistency, and strong work ethic. These formative years not only equipped me with essential knowledge and values but also shaped the aspirations and core habits that continue to guide my educational and professional pursuits today.",
+    degree: "Schooling • 10th • BSE",
   },
 ];
 
@@ -274,4 +284,46 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     github: "https://ashutosh-pradhan-05.github.io/Realtime_analog_wall_clock"
   }
-];  
+];
+
+export const certifications = [
+  {
+    id: 1,
+    title: "Oracle Cloud Infrastructure 2025 Developer Professional [1Z0-1084-25]",
+    image: ocideveloper,
+    logo: oraclelogo,
+    orglogo: oracle,
+    organization: "ORACLE",
+    cid: "102640477OCID25CP",
+    issueddate: "10th October 2025",
+    valid: "10th October 2025 - 10th October 2027",
+    score: "88%",
+    verifyLink:"https://catalog-education.oracle.com/ords/certview/sharebadge?id=B73548D19BCA7FEC3CF9B88E32161E371FB2D9E859D3A774E9C366B6CD263DC2"
+  },
+  {
+    id: 2,
+    title: "Oracle Cloud Infrastructure 2025 Foundations Associate [1Z0-1085-25]",
+    image: ocifoundation,
+    logo: oraclelogo,
+    orglogo: oracle,
+    organization: "ORACLE",
+    cid: "102640477OCI25FNDCFA",
+    issueddate: "15th September 2025",
+    valid: "15th September 2025 - 15th September 2027",
+    score: "90%",
+    verifyLink:"https://catalog-education.oracle.com/pls/certview/sharebadge?id=FECD283DE7E81A1572654171EB62C89D148B723F3EF4D424BBC88510FAB5DC2F"
+  },
+  {
+    id: 3,
+    title: "Wipro TalentNext Program on Java",
+    image: wiprojava,
+    logo: wiprologo,
+    orglogo: wipro,
+    organization: "WIPRO",
+    cid: "T28FNb",
+    issueddate: "06th October 2023",
+    valid: "This certificate does not expire.",
+    score: "85%",
+    verifyLink:"https://cert.diceid.com/csr/cid/T28FNb?verify=true"
+  },
+];

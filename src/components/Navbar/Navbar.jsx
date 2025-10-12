@@ -11,10 +11,18 @@ const Navbar = () => {
 
   // Detect scroll and change navbar background
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    const handleScroll = () => {
+      // Close mobile menu on scroll
+      if (isOpen) setIsOpen(false);
+
+      // Detect scroll for navbar background
+      setIsScrolled(window.scrollY > 50);
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isOpen]);
+
 
   const menuItems = [
     { id: "about", label: "ABOUT" },
@@ -22,6 +30,8 @@ const Navbar = () => {
     { id: "experience", label: "EXPERIENCE" },
     { id: "work", label: "PROJECTS" },
     { id: "education", label: "EDUCATION" },
+    { id: "certifications", label: "CERTIFICATIONS" },
+    { id: "contact", label: "CONTACT" }
   ];
 
   const handleMenuItemClick = (sectionId) => {
@@ -63,7 +73,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex justify-center">
           <ul className="flex gap-x-6 whitespace-nowrap">
-            {menuItems.map((item) => (
+            {menuItems.slice(0, 5).map((item) => (
               <li key={item.id}>
                 <button
                   onClick={() => handleMenuItemClick(item.id)}

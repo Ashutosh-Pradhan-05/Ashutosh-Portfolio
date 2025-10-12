@@ -67,7 +67,7 @@ const Work = () => {
                 {project.description}
               </p>
               <div className="mb-4">
-                <h5 className="font-medium text-white mb-2">Used Tech Stacks:</h5>
+                <span className="font-medium text-white mb-2 h-4">Used Tech Stacks: </span>
                 {project.tags.map((tag, index) => (
                   <span
                     key={index}
@@ -81,7 +81,7 @@ const Work = () => {
               <div className="flex justify-center">
                 <button
                   onClick={() => handleOpenModal(project)}
-                  className="bg-purple-600 hover:bg-purple-800 text-white px-6 py-2 rounded-xl text-sm sm:text-base font-semibold flex items-center justify-center gap-2 cursor-pointer"
+                  className="bg-purple-600 hover:bg-purple-800 text-white px-6 py-2 rounded-xl text-sm sm:text-base font-semibold flex items-center justify-center gap-2 cursor-pointer hover:scale-110 transition-all duration-200"
                 >
                   <IoEye className="text-lg sm:text-xl" />
                   View Project
@@ -105,7 +105,6 @@ const Work = () => {
                 <ImUndo2 className="text-lg sm:text-xl" />
                 Back
               </button>
-
 
             </div>
 

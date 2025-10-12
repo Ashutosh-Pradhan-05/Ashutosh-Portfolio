@@ -10,7 +10,6 @@ const About = () => {
         {/* left side */}
         <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
           <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold  mb-2 leading-tight">Hi, I am</h1>
-          {/* <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight text-[#0d6efd]">Ashutosh Pradhan</h2> */}
           <motion.h2
             animate={{
               backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
@@ -84,7 +83,7 @@ const About = () => {
           {/* CV Button & Contact Me Button */}
           <div className='flex flex-col sm:flex-row items-center justify-center sm:justify-start md:gap-4 lg:ms-16 md:mt-14'>
             <a
-              href="https://drive.google.com/file/d/1SANUWDD1Jx478Ik76DtyM1MNJX-JMkD2/view"
+              href="https://drive.google.com/file/d/1JRbm_fBUaUAIoaOJ4LUnpqOYhVNmhjN0/view"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-semibold transition duration-300 transform hover:scale-105 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-[#6f3de0] hover:to-[#9333ea]"

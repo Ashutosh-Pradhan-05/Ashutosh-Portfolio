@@ -108,12 +108,13 @@ const Experience = () => {
 
               <p className="mt-4 text-gray-400 text-justify indent-10">{experience.desc}</p>
               <div className="mt-4">
-                <h5 className="font-medium text-white">Used Tech Stacks:</h5>
-                <ul className="flex flex-wrap mt-2">
-                  {experience.skills.map((skill, index) => (
-                    <li key={index} className="bg-[#8245ec] text-gray-300 px-2 py-1 text-xs sm:text-sm rounded-lg mr-2 mb-2 border border-gray-400 text-center">{skill}</li>
-                  ))}
-                </ul>
+                <span className="font-medium text-white h-4">Used Tech Stacks:
+                  <ul className="flex flex-wrap mt-2">
+                    {experience.skills.map((skill, index) => (
+                      <li key={index} className="bg-[#8245ec] text-gray-300 px-2 py-1 text-xs sm:text-sm rounded-lg mr-2 mb-2 border border-gray-400 text-center">{skill}</li>
+                    ))}
+                  </ul>
+                </span>
               </div>
             </div>
           </div>
