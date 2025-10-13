@@ -4,7 +4,7 @@ import { certifications } from "../../constants";
 import { RiPassValidFill } from "react-icons/ri";
 import { PiCertificateFill } from "react-icons/pi";
 import { FaCalendarCheck, FaIdCard } from "react-icons/fa";
-import { FaFileShield, FaRegCalendarDays, FaFileCircleCheck } from "react-icons/fa6";
+import { FaRegCalendarDays, FaFileCircleCheck } from "react-icons/fa6";
 
 const Certification = () => {
     const handleOpenModal = (cert) => {
