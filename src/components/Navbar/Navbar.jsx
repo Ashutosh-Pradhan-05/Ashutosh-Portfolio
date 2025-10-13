@@ -176,7 +176,7 @@ const Navbar = () => {
           >
             <ul className="flex flex-col items-center space-y-4 py-4 text-gray-300">
               {menuItems.map((item) => (
-                <li key={item.id} className="cursor-pointer hover:text-white">
+                <li key={item.id} className="cursor-pointer hover:text-white font-bold">
                   <button onClick={() => handleMenuItemClick(item.id)}>
                     {item.label}
                   </button>
@@ -189,7 +189,7 @@ const Navbar = () => {
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white"
                 >
-                  <FaLinkedin size={24} />
+                  <FaLinkedin size={28} />
                 </a>
                 <a
                   href="https://github.com/Ashutosh-Pradhan-05"
@@ -197,7 +197,7 @@ const Navbar = () => {
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white"
                 >
-                  <FaGithub size={24} />
+                  <FaGithub size={28} />
                 </a>
                 <a
                   href="https://x.com/Ashutoshtwitind"
@@ -205,7 +205,7 @@ const Navbar = () => {
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-[#8245ec]"
                 >
-                  <FaXTwitter size={24} />
+                  <FaXTwitter size={28} />
                 </a>
               </div>
             </ul>

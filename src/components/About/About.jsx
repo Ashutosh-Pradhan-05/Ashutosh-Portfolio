@@ -63,36 +63,81 @@ const About = () => {
         </div>
 
         {/* Right Side */}
+
         <div>
           <Tilt
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700  rounded-full"
-            tiltMaxAngleX={30}
-            tiltMaxAngleY={30}
+            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] rounded-full"
+            tiltMaxAngleX={12}
+            tiltMaxAngleY={12}
             perspective={1000}
-            scale={1.05}
-            transitionSpeed={1000}
+            scale={1.02}
+            transitionSpeed={600}
             gyroscope={true}
           >
-            <img
-              src={profileImage}
-              alt="Ashutosh Pradhan"
-              className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
-            />
+            {/* Lens wrapper */}
+            <div className="lens-wrapper relative w-full h-full rounded-full overflow-hidden">
+              {/*  Animated Gradient Border */}
+              <div className="absolute inset-0 rounded-full border-gradient-ring pointer-events-none" />
+
+              {/* SVG filter defs (for convex/specular effect) */}
+              <svg width="0" height="0" className="absolute">
+                <defs>
+                  <filter id="convexLens" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="0.3" result="blur" />
+                    <feSpecularLighting in="blur" surfaceScale="2" specularConstant="0.4" specularExponent="20" lightingColor="white" result="specOut">
+                      <fePointLight x="-200" y="-100" z="400" />
+                    </feSpecularLighting>
+                    <feComposite in="specOut" in2="SourceGraphic" operator="arithmetic" k1="0" k2="1" k3="0" k4="0" />
+                  </filter>
+                </defs>
+              </svg>
+
+              {/* Animated image */}
+              <motion.img
+                src={profileImage}
+                alt="Ashutosh Pradhan"
+                className="w-full h-full object-cover rounded-full transform-gpu"
+                initial={{ scale: 1 }}
+                animate={{ scale: [1, 1.1, 1] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                loading="lazy"
+              />
+
+              {/* Glossy top highlight */}
+              <div className="absolute top-0 left-0 w-full h-1/2 pointer-events-none">
+                <div className="lens-highlight w-full h-full rounded-full" />
+              </div>
+
+              {/* Inner shadow for depth */}
+              <div className="absolute inset-0 pointer-events-none">
+                <div className="lens-inner-shadow w-full h-full rounded-full" />
+              </div>
+
+              {/* Light refraction layer */}
+              <div aria-hidden="true" className="absolute inset-0 rounded-full lens-filter-layer" />
+            </div>
           </Tilt>
 
           {/* CV Button & Contact Me Button */}
-          <div className='flex flex-col sm:flex-row items-center justify-center sm:justify-start md:gap-4 lg:ms-16 md:mt-14'>
+          <div className="mt-6 md:mt-14 w-full flex flex-col md:flex-row items-center justify-center md:justify-center gap-3 md:gap-4">
+            {/* Primary button - DOWNLOAD CV */}
             <a
               href="https://drive.google.com/file/d/1JRbm_fBUaUAIoaOJ4LUnpqOYhVNmhjN0/view"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-semibold transition duration-300 transform hover:scale-105 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-[#6f3de0] hover:to-[#9333ea]"
+              role="button"
+              aria-label="Download CV (opens in new tab)"
+              className="inline-block text-white py-3 px-7 rounded-full mt-3 text-lg font-semibold transition duration-300 transform hover:scale-105 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-[#6f3de0] hover:to-[#9333ea]"
             >
               DOWNLOAD CV
             </a>
+
+            {/* Secondary button - CONTACT ME */}
             <a
               href="#contact"
-              className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-semibold transition duration-300 transform hover:scale-105 bg-gradient-to-r from-purple-600 to-pink-500 hover:from-[#6f3de0] hover:to-[#9333ea]"
+              role="button"
+              aria-label="Contact me"
+              className="inline-block text-white py-3 px-8 rounded-full mt-3 text-lg font-semibold transition duration-300 transform hover:scale-105 bg-gradient-to-r from-purple-600 to-pink-500 hover:from-[#6f3de0] hover:to-[#9333ea]"
             >
               CONTACT ME
             </a>

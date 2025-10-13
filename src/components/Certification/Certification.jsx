@@ -4,7 +4,7 @@ import { certifications } from "../../constants";
 import { RiPassValidFill } from "react-icons/ri";
 import { PiCertificateFill } from "react-icons/pi";
 import { FaCalendarCheck, FaIdCard } from "react-icons/fa";
-import { FaFileShield, FaRegCalendarDays } from "react-icons/fa6";
+import { FaFileShield, FaRegCalendarDays, FaFileCircleCheck } from "react-icons/fa6";
 
 const Certification = () => {
     const handleOpenModal = (cert) => {
@@ -48,7 +48,7 @@ const Certification = () => {
             </div>
 
             {/* Certification Grid */}
-            <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-20 md:gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {certifications.map((cert) => (
                     <div
                         key={cert.id}
@@ -81,7 +81,7 @@ const Certification = () => {
                                 <img
                                     src={cert.image}
                                     alt={cert.title}
-                                    className="w-full h-auto max-h-[300px] object-contain rounded-xl transition-transform duration-300 hover:scale-105"
+                                    className="w-full h-auto max-h-[300px] rounded-xl object-contain transition-transform duration-300 hover:scale-105"
                                     onError={(e) => {
                                         e.currentTarget.src = "/placeholder-certificate.png";
                                     }}
@@ -151,11 +151,10 @@ const Certification = () => {
                                         onClick={() => handleOpenVerify(cert)}
                                         className="w-full hover:cursor-pointer sm:w-4/5 lg:w-[85%] xl:w-[90%] bg-gradient-to-r from-purple-600 to-pink-500 hover:from-[#6f3de0] hover:to-[#9333ea] hover:bg-white/5 text-white px-6 py-2.5 rounded-xl text-sm sm:text-base font-semibold flex items-center justify-center gap-3 shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300"
                                     >
-                                        <FaFileShield size={26} />
+                                        <FaFileCircleCheck size={26} />
                                         <span className="text-sm">Verify Credential</span>
                                     </button>
                                 </div>
-
 
                                 {/* End buttons */}
                             </div>

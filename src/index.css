@@ -3,7 +3,7 @@
 @import "tailwindcss";
 
 * {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -11,14 +11,45 @@ html {
 }
 
 @layer utilities {
-    .clip-path-custom {
-      clip-path: polygon(0 0, 100% 0, 100% 98%, 75% 95%, 0 100%);
-    }
-    .clip-path-custom-2 {
-        clip-path: polygon(0 0, 100% 0, 100% 98%, 25% 95%, 0 100%);
-      }
-    .clip-path-custom-3 {
-        clip-path: polygon(0 0, 100% 0, 100% 98%, 75% 96%, 0 100%);
-      }
+  .clip-path-custom {
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 75% 95%, 0 100%);
   }
-  
+
+  .clip-path-custom-2 {
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 25% 95%, 0 100%);
+  }
+
+  .clip-path-custom-3 {
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 75% 96%, 0 100%);
+  }
+}
+
+
+/* 🌈 Animated gradient border */
+.border-gradient-ring {
+  border: 6px solid transparent;
+  background: linear-gradient(135deg, #7e22ce, #ec4899, #3b82f6) border-box;
+  mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  animation: rotateGradient 6s linear infinite;
+  opacity: 0.9;
+  z-index: 5;
+}
+
+/* Smooth rotating border animation */
+@keyframes rotateGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
