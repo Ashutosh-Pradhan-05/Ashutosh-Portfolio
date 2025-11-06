@@ -18,7 +18,7 @@ Optimized for both **performance** and **scalability**, this portfolio serves as
 - ⚛️ React 19
 - ⚡ Vite
 - 🎨 Tailwind CSS 4
-- 🧩 Core CSS
+- 🧩 Core CSS 3
 
 **Libraries & Plugins**  
 - 🔀 `react-router-dom` : Routing 
