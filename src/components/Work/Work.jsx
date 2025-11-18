@@ -27,21 +27,26 @@ const Work = () => {
         {/* <div className="w-72 h-3 bg-gradient-to-r from-[#fc466b] to-[#3f5efb] mx-auto mt-2"></div> */}
         <motion.div
           animate={{
-            backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+            backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
           }}
           transition={{
             duration: 1,
             repeat: Infinity,
-            ease: 'easeInOut',
+            ease: "easeInOut",
           }}
           className="w-72 h-3 mx-auto mt-2 bg-gradient-to-r from-[#fc466b] to-[#3f5efb] bg-[length:200%_200%]"
           style={{
-            backgroundImage: 'linear-gradient(to right, #fc466b, #3f5efb)',
-            backgroundSize: '200% 200%',
-            backgroundRepeat: 'no-repeat',
+            backgroundImage: "linear-gradient(to right, #fc466b, #3f5efb)",
+            backgroundSize: "200% 200%",
+            backgroundRepeat: "no-repeat",
           }}
         />
-        <p className="text-gray-600 mt-4 text-lg font-semibold text-justify sm:text-lg md:text-center">A curated selection of my personal projects that demonstrate my technical expertise, problem-solving abilities, critical thinking skills, real-world projects and hands-on experience across diverse technologies and development environments. </p>
+        <p className="text-gray-600 mt-4 text-lg font-semibold text-justify sm:text-lg md:text-center">
+          A curated selection of my personal projects that demonstrate my
+          technical expertise, problem-solving abilities, critical thinking
+          skills, real-world projects and hands-on experience across diverse
+          technologies and development environments.{" "}
+        </p>
       </div>
 
       {/* Projects Grid */}
@@ -67,7 +72,9 @@ const Work = () => {
                 {project.description}
               </p>
               <div className="mb-4">
-                <span className="font-medium text-white mb-2 h-4">Used Tech Stacks: </span>
+                <span className="font-medium text-white mb-2 h-4">
+                  Used Tech Stacks:{" "}
+                </span>
                 {project.tags.map((tag, index) => (
                   <span
                     key={index}
@@ -90,7 +97,6 @@ const Work = () => {
             </div>
           </div>
         ))}
-
       </div>
 
       {/* Modal Container */}
@@ -105,7 +111,6 @@ const Work = () => {
                 <ImUndo2 className="text-lg sm:text-xl" />
                 Back
               </button>
-
             </div>
 
             <div className="flex flex-col">
@@ -127,7 +132,8 @@ const Work = () => {
                     rel="noopener noreferrer"
                     className="bg-purple-600 hover:bg-purple-800 text-white text-xs lg:text-sm font-semibold px-1 py-0.5 rounded-lg transition duration-300 flex items-center gap-1"
                   >
-                    View <LuExternalLink className="text-white text-sm lg:text-base" />
+                    View{" "}
+                    <LuExternalLink className="text-white text-sm lg:text-base" />
                   </a>
                 </div>
 

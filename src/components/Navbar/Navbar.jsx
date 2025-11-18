@@ -3,7 +3,12 @@ import { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AnimatePresence, motion } from "framer-motion";
-import { FaXTwitter, FaLessThan, FaGreaterThan, FaReact } from "react-icons/fa6";
+import {
+  FaXTwitter,
+  FaLessThan,
+  FaGreaterThan,
+  FaReact,
+} from "react-icons/fa6";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +28,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isOpen]);
 
-
   const menuItems = [
     { id: "about", label: "ABOUT" },
     { id: "skills", label: "SKILLS" },
@@ -31,7 +35,7 @@ const Navbar = () => {
     { id: "work", label: "PROJECTS" },
     { id: "education", label: "EDUCATION" },
     { id: "certifications", label: "CERTIFICATIONS" },
-    { id: "contact", label: "CONTACT" }
+    { id: "contact", label: "CONTACT" },
   ];
 
   const handleMenuItemClick = (sectionId) => {
@@ -44,11 +48,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition duration-300 px-4 sm:px-6 md:px-10 lg:px-[10vw] xl:px-[20vw] ${isScrolled ? "bg-[#0d6efd]/30 backdrop-blur-md shadow-md" : "bg-transparent"
-        }`}
+      className={`fixed top-0 w-full z-50 transition duration-300 px-4 sm:px-6 md:px-10 lg:px-[10vw] xl:px-[20vw] ${
+        isScrolled
+          ? "bg-[#0d6efd]/30 backdrop-blur-md shadow-md"
+          : "bg-transparent"
+      }`}
     >
       <div className="py-4 flex items-center justify-between gap-x-6 flex-nowrap">
-
         {/* Desktop View */}
         <motion.div
           onClick={() => {
@@ -62,19 +68,24 @@ const Navbar = () => {
             repeatType: "loop",
             ease: "easeInOut",
           }}
-          className={`hidden md:inline-flex items-center gap-1 font-semibold cursor-pointer ${scrollColor}`}
+          className={`hidden md:inline-flex items-center gap-1 font-semibold cursor-pointer ${
+            isScrolled ? "text-[#0d6efd]" : "text-white"
+          }`}
         >
-          <FaLessThan className="text-base me-[-3px]" />
-          <span className="text-sm sm:text-md">AshutoshPradhan</span>
-          <RxSlash className="text-base ms-[-5px]" style={{ strokeWidth: 0.7 }} />
-          <FaGreaterThan className="ms-[-8px]" />
+          <FaLessThan className={`text-base me-[-3px]`} />
+          <span className={`text-sm sm:text-md `}>AshutoshPradhan</span>
+          <RxSlash
+            className={`text-base ms-[-5px] `}
+            style={{ strokeWidth: 0.7 }}
+          />
+          <FaGreaterThan className={`ms-[-8px]`} />
         </motion.div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex justify-center">
           <ul className="flex gap-x-6 whitespace-nowrap">
             {menuItems.slice(0, 5).map((item) => (
-              <li key={item.id}>
+              <li key={item.id} className="text-white">
                 <button
                   onClick={() => handleMenuItemClick(item.id)}
                   className="font-bold cursor-pointer hover:scale-110 transition-transform hover:text-[#8245ec]"
@@ -92,7 +103,7 @@ const Navbar = () => {
             href="https://www.linkedin.com/in/ashutosh-pradhan05"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#8245ec] sm:hover:scale-125 transition-transform"
+            className="text-white hover:text-[#8245ec] sm:hover:scale-125 transition-transform"
           >
             <FaLinkedin size={24} />
           </a>
@@ -100,7 +111,7 @@ const Navbar = () => {
             href="https://github.com/Ashutosh-Pradhan-05"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#8245ec] sm:hover:scale-125 transition-transform"
+            className="text-white hover:text-[#8245ec] sm:hover:scale-125 transition-transform"
           >
             <FaGithub size={24} />
           </a>
@@ -108,7 +119,7 @@ const Navbar = () => {
             href="https://x.com/Ashutoshtwitind"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#8245ec] sm:hover:scale-125 transition-transform"
+            className="text-white hover:text-[#8245ec] sm:hover:scale-125 transition-transform"
           >
             <FaXTwitter size={24} />
           </a>
@@ -118,16 +129,19 @@ const Navbar = () => {
         <div className="md:hidden flex items-center justify-between w-full">
           {/* Left: React Logo */}
           <motion.div
-            animate={{ rotate: 360, scale: [0.8, 1.2, 0.8] }}
+            animate={{ rotate: 360, scale: [0.7, 1.5, 0.7] }}
             transition={{
-              rotate: { duration: 1.8, repeat: Infinity, ease: "linear" }, // smooth spin
-              scale: { duration: 1.2, repeat: Infinity, ease: "easeInOut" } // faster pulse
+              rotate: { duration: 2, repeat: Infinity, ease: "linear" }, // smooth spin
+              scale: { duration: 1.5, repeat: Infinity, ease: "easeInOut" }, // faster pulse
             }}
           >
-            <FaReact size={26} className={scrollColor} />
+            <FaReact
+              size={26}
+              className={`${isScrolled ? "text-[#0d6efd]" : "text-white"}`}
+            />
           </motion.div>
 
-          {/* Middle: Logo Text */}
+          {/* Middle: Logo Text <AshutoshPradhan /> */}
           <motion.div
             onClick={() => {
               setIsOpen(false);
@@ -140,23 +154,32 @@ const Navbar = () => {
               repeatType: "loop",
               ease: "easeInOut",
             }}
-            className={`cursor-pointer inline-flex items-center gap-1 font-semibold ${scrollColor}`}
+            className={`cursor-pointer inline-flex items-center gap-1 font-semibold ${
+              scrollColor ? "text-[#0d6efd]" : "text-white"
+            }`}
           >
             <FaLessThan className="text-base me-[-3px]" />
             <span className="text-sm">AshutoshPradhan</span>
-            <RxSlash className="text-base ms-[-5px]" style={{ strokeWidth: 0.7 }} />
+            <RxSlash
+              className="text-base ms-[-5px]"
+              style={{ strokeWidth: 0.7 }}
+            />
             <FaGreaterThan className="ms-[-8px]" />
           </motion.div>
 
           {/* Right: Menu Icon */}
           {isOpen ? (
             <FiX
-              className={`text-3xl cursor-pointer ${scrollColor}`}
+              className={`text-3xl cursor-pointer ${
+                isScrolled ? "text-[#0d6efd]" : "text-white"
+              }`}
               onClick={() => setIsOpen(false)}
             />
           ) : (
             <FiMenu
-              className={`text-3xl cursor-pointer ${scrollColor}`}
+              className={`text-3xl cursor-pointer ${
+                isScrolled ? "text-[#0d6efd]" : "text-white"
+              }`}
               onClick={() => setIsOpen(true)}
             />
           )}
@@ -176,7 +199,10 @@ const Navbar = () => {
           >
             <ul className="flex flex-col items-center space-y-4 py-4 text-gray-300">
               {menuItems.map((item) => (
-                <li key={item.id} className="cursor-pointer hover:text-white font-bold">
+                <li
+                  key={item.id}
+                  className="cursor-pointer hover:text-white font-bold"
+                >
                   <button onClick={() => handleMenuItemClick(item.id)}>
                     {item.label}
                   </button>

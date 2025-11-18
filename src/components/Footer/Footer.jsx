@@ -5,7 +5,13 @@ import { GiSelfLove } from "react-icons/gi";
 import { SiMessenger } from "react-icons/si";
 import { BiLogoTelegram } from "react-icons/bi";
 import { FaXTwitter, FaLessThan, FaGreaterThan } from "react-icons/fa6";
-import { FaGithub, FaLinkedin, FaFacebookSquare, FaInstagram, FaArrowUp } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaFacebookSquare,
+  FaInstagram,
+  FaArrowUp,
+} from "react-icons/fa";
 
 const Footer = () => {
   // Smooth scroll function
@@ -17,9 +23,8 @@ const Footer = () => {
   };
 
   return (
-    <footer className="py-8 px-[6vw] md:px-[5vw] lg:px-[12vw] bg-white">
+    <footer className="py-8 px-[6vw] md:px-[5vw] lg:px-[12vw] bg-[#050414]">
       <div className="w-full max-w-full flex flex-col items-center justify-center text-center">
-
         {/* Name / Logo */}
         <motion.span
           animate={{
@@ -63,7 +68,7 @@ const Footer = () => {
             <button
               key={index}
               onClick={() => handleScroll(item.id)}
-              className="hover:text-purple-600 hover:cursor-pointer md:hover:scale-110 transition-transform text-md sm:text-base my-1 font-bold"
+              className="text-white hover:text-purple-600 hover:cursor-pointer md:hover:scale-110 transition-transform text-md sm:text-base my-1 font-bold"
             >
               {item.name}
             </button>
@@ -71,15 +76,30 @@ const Footer = () => {
         </nav>
 
         {/* Social Icons */}
-        <div className="flex flex-wrap justify-center space-x-4 mt-6 md:scale-125">
+        <div className="flex flex-wrap justify-center space-x-4 mt-6 md:scale-125 text-white">
           {[
-            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/ashutosh-pradhan05" },
-            { icon: <FaGithub />, link: "https://github.com/Ashutosh-Pradhan-05" },
+            {
+              icon: <FaLinkedin />,
+              link: "https://www.linkedin.com/in/ashutosh-pradhan05",
+            },
+            {
+              icon: <FaGithub />,
+              link: "https://github.com/Ashutosh-Pradhan-05",
+            },
             { icon: <FaXTwitter />, link: "https://x.com/Ashutoshtwitind" },
             { icon: <BiLogoTelegram />, link: "https://t.me/ashutosh_pradhan" },
-            { icon: <FaInstagram />, link: "https://www.instagram.com/ashutosh.pradhan.ind" },
-            { icon: <SiMessenger />, link: "https://m.me/ashutosh.pradhan.ind" },
-            { icon: <FaFacebookSquare />, link: "https://www.facebook.com/ashutosh.pradhan.ind" },
+            {
+              icon: <FaInstagram />,
+              link: "https://www.instagram.com/ashutosh.pradhan.ind",
+            },
+            {
+              icon: <SiMessenger />,
+              link: "https://m.me/ashutosh.pradhan.ind",
+            },
+            {
+              icon: <FaFacebookSquare />,
+              link: "https://www.facebook.com/ashutosh.pradhan.ind",
+            },
           ].map((item, index) => (
             <a
               key={index}
@@ -97,25 +117,27 @@ const Footer = () => {
         {/* Copyright */}
         {/* Copyright + Scroll to Top */}
         <div className="text-base sm:text-lg md:text-[18px] mt-4 w-full text-center">
-          <div className="m-0 flex flex-wrap items-center justify-center gap-2">
+          <div className="m-0 flex flex-wrap items-center justify-center gap-2 text-white">
             Designed & Developed By
             <motion.span
               animate={{
-                backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+                backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
               }}
               transition={{
                 duration: 1,
                 repeat: Infinity,
-                ease: 'easeInOut',
+                ease: "easeInOut",
               }}
               className="font-bold bg-gradient-to-r from-[#fc466b] to-[#3f5efb] bg-clip-text text-transparent bg-[length:200%_200%] inline-flex items-center gap-1"
               style={{
-                backgroundImage: 'linear-gradient(to right, #fc466b, #3f5efb)'
+                backgroundImage: "linear-gradient(to right, #fc466b, #3f5efb)",
               }}
             >
               Ashutosh Pradhan <GiSelfLove className="text-red-600" size={22} />
             </motion.span>
-            &copy; 2025 All rights reserved.
+            <span className="text-gray-500">
+              &copy; 2025 All rights reserved.
+            </span>
             {/* Scroll to Top using Upper Icon */}
             <motion.button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -126,7 +148,7 @@ const Footer = () => {
                 boxShadow: [
                   "0 0 0px rgba(255, 105, 180, 0.6)",
                   "0 0 50px rgba(255, 105, 180, 0.6)",
-                  "0 0 0px rgba(255, 105, 180, 0.6)"
+                  "0 0 0px rgba(255, 105, 180, 0.6)",
                 ], // glowing effect
               }}
               transition={{
