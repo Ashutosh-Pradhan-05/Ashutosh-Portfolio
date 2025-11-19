@@ -23,7 +23,7 @@ const Work = () => {
     >
       {/* Section Title */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold">PROJECTS</h2>
+        <h2 className="text-4xl font-bold text-gray-300">PROJECTS</h2>
         {/* <div className="w-72 h-3 bg-gradient-to-r from-[#fc466b] to-[#3f5efb] mx-auto mt-2"></div> */}
         <motion.div
           animate={{
@@ -41,7 +41,7 @@ const Work = () => {
             backgroundRepeat: "no-repeat",
           }}
         />
-        <p className="text-gray-600 mt-4 text-lg font-semibold text-justify sm:text-lg md:text-center">
+        <p className="text-gray-400 mt-4 text-lg font-semibold text-justify sm:text-lg md:text-center">
           A curated selection of my personal projects that demonstrate my
           technical expertise, problem-solving abilities, critical thinking
           skills, real-world projects and hands-on experience across diverse
@@ -54,7 +54,7 @@ const Work = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="border border-white bg-gray-900 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden hover:shadow-purple-500/90 hover:-translate-y-2 transition-transform duration-300"
+            className="border border-white bg-radial from-[#050414] from-50% to-[#2c076c] backdrop-blur-md rounded-2xl shadow-xl overflow-hidden hover:shadow-purple-500/90 hover:-translate-y-2 transition-transform duration-300"
           >
             <div className="p-4" onClick={() => handleOpenModal(project)}>
               <img
@@ -67,7 +67,7 @@ const Work = () => {
               <h3 className="text-2xl font-bold text-white mb-2 text-center">
                 {project.title}
               </h3>
-              <div className="w-full h-1 bg-gradient-to-r from-[#8245ec] to-[#ff7f50] mx-auto" />
+              <div className="w-full h-1 bg-gradient-to-r from-[#ff7f50] from-1% via-[#8245ec] via-50% to-[#ff7f50] to-99% mx-auto" />
               <p className="text-gray-400 mb-4 pt-4 line-clamp-3 text-justify">
                 {project.description}
               </p>
