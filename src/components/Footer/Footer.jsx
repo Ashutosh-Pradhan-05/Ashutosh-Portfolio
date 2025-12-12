@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { RxSlash } from "react-icons/rx";
 import { GiSelfLove } from "react-icons/gi";
-import { SiMessenger } from "react-icons/si";
+import { SiMessenger, SiZoho } from "react-icons/si";
 import { BiLogoTelegram } from "react-icons/bi";
 import { FaXTwitter, FaLessThan, FaGreaterThan } from "react-icons/fa6";
 import {
@@ -87,6 +87,10 @@ const Footer = () => {
               link: "https://github.com/Ashutosh-Pradhan-05",
             },
             { icon: <FaXTwitter />, link: "https://x.com/Ashutoshtwitind" },
+            {
+              icon: <SiZoho size={30} />,
+              link: "mailto:iamashutoshpradhan@zohomail.in",
+            },
             { icon: <BiLogoTelegram />, link: "https://t.me/ashutosh_pradhan" },
             {
               icon: <FaInstagram />,
