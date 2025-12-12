@@ -40,6 +40,7 @@ Optimized for both **performance** and **scalability**, this portfolio serves as
 
 ## 📁 Project Structure (Alphabetically Sorted)
 ```
+├── .env
 ├── .git
 ├── dist
 ├── index.html
