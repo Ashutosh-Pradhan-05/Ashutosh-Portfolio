@@ -4,10 +4,8 @@ import htmlLogo from "./assets/tech_logo/html.png";
 import cssLogo from "./assets/tech_logo/css.png";
 import tailwindcssLogo from "./assets/tech_logo/tailwindcss.png";
 import bootstrapLogo from "./assets/tech_logo/bootstrap.png";
-import sassLogo from "./assets/tech_logo/sass.png";
 import reactjsLogo from "./assets/tech_logo/reactjs.png";
 import reduxLogo from "./assets/tech_logo/redux.png";
-import angularLogo from "./assets/tech_logo/angular.png";
 import jQueryLogo from "./assets/tech_logo/jQuery.png";
 import jQUILogo from "./assets/tech_logo/jQuery-UI.png";
 import materialuiLogo from "./assets/tech_logo/materialui.png";
@@ -38,6 +36,7 @@ import npmLogo from "./assets/tech_logo/npm.png";
 import gaLogo from "./assets/tech_logo/google_analytics.png";
 
 // Experience Section Logo's
+import tbLogo from "./assets/company_logo/thinkbridge.png"; // ThinkBridge
 import nitLogo from "./assets/company_logo/nit_logo.png"; // Naresh i Technologies
 import internLogo from "./assets/company_logo/internship_studio_logo.png"; // Internship Studio
 // Education Section Logo's
@@ -72,12 +71,10 @@ export const SkillsInfo = [
       { name: "CSS", logo: cssLogo },
       { name: "Tailwind CSS", logo: tailwindcssLogo },
       { name: "Bootstrap", logo: bootstrapLogo },
-      { name: "SASS", logo: sassLogo },
       { name: "JavaScript", logo: javascriptLogo },
       { name: "React", logo: reactjsLogo },
       { name: "Redux", logo: reduxLogo },
       { name: "Material UI", logo: materialuiLogo },
-      { name: "Angular", logo: angularLogo },
       { name: "jQuery", logo: jQueryLogo },
       { name: "jQuery UI", logo: jQUILogo },
     ],
@@ -124,6 +121,32 @@ export const SkillsInfo = [
 export const experiences = [
   {
     id: 0,
+    img: tbLogo,
+    role: "FullStack Developer",
+    certificate:
+      "https://drive.google.com/file/d/1gVAi1OrKxqtRmyNY-J3vS0p0jPiWJ1Wr/view",
+    website: "https://www.thinkbridge.com",
+    company: "ThinkBridge",
+    location: "Pune, IN • On-site",
+    date: "Nov 2025 - Dec 2025",
+    desc: "Experienced in debugging, UI optimization, application logic development, and localStorage-based data management. Skilled in building responsive web applications using HTML, Tailwind CSS, and JavaScript. Also authored a research paper on AI-integrated coding tools and AI-assisted IDE workflows.",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Tailwind CSS",
+      "React",
+      "Node.js",
+      "Express.js",
+      "Git",
+      "GitHub",
+      "Chrome DevTools",
+      "VS Code",
+      "Cursor",
+    ],
+  },
+  {
+    id: 1,
     img: nitLogo,
     role: "Trainee",
     certificate:
@@ -158,7 +181,7 @@ export const experiences = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     img: internLogo,
     role: " AWS Intern",
     certificate:
