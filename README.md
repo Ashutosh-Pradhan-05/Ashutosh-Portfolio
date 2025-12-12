@@ -39,6 +39,54 @@ Optimized for both **performance** and **scalability**, this portfolio serves as
 
 ---
 
+## 📁 Project Structure (Alphabetically Sorted)
+.
+├── .git
+├── dist
+├── index.html
+├── node_modules
+├── package-lock.json
+├── package.json
+├── public
+├── README.md
+├── eslint.config.js
+├── src
+│   ├── App.css
+│   ├── App.jsx
+│   ├── assets
+│   │   ├── certification_logo/
+│   │   ├── company_logo/
+│   │   ├── education_logo/
+│   │   ├── portfolioicon.png
+│   │   ├── profile.jpg
+│   │   ├── tech_logo/
+│   │   └── work_logo/
+│   ├── BlurBlob.jsx
+│   ├── components
+│   │   ├── About
+│   │   │   └── About.jsx
+│   │   ├── Certification
+│   │   │   └── Certification.jsx
+│   │   ├── Contact
+│   │   │   └── Contact.jsx
+│   │   ├── Education
+│   │   │   └── Education.jsx
+│   │   ├── Experience
+│   │   │   └── Experience.jsx
+│   │   ├── Footer
+│   │   │   └── Footer.jsx
+│   │   ├── Navbar
+│   │   │   └── Navbar.jsx
+│   │   ├── Skills
+│   │   │   └── Skills.jsx
+│   │   └── Work
+│   │       └── Work.jsx
+│   ├── constants.js
+│   ├── index.css
+│   └── main.jsx
+├── tailwind.config.js
+└── vite.config.js
+
 ## 📸 Project Section Screenshots
 
 ### 1️⃣ About Section
