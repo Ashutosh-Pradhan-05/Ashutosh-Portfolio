@@ -1,44 +1,99 @@
-# 🌐 Personal Portfolio [Vite + React + Tailwind CSS]
 
-<img width="1875" height="945" alt="ReactPortfolio" src="https://github.com/user-attachments/assets/160354bb-3e8a-4cd7-8ed0-11d554bbffb8" />
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?font=Audiowide&size=32&duration=3000&pause=1000&color=00F0FF&center=true&vCenter=true&width=900&lines=Ashutosh+Pradhan's+Portfolio🧑‍💻;Developed+by+Ashutosh+Pradhan💝;React+19+%7C+Vite+7+%7C+Tailwind+CSS+4" />
 
-## 📖 Overview
+</p>
 
-This project is a **fully responsive personal portfolio website** built with **React 19** and **Vite**, designed to deliver a seamless user experience across both mobile and desktop platforms. It features a **modern, clean UI** styled with **Tailwind CSS** and includes engaging **interactive animations** powered by libraries like `react-parallax-tilt`, `framer-motion` and `react-typing-effect`.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-19.1.0-00F0FF?style=for-the-badge&logo=react&logoColor=00F0FF&labelColor=0A0A0A" />
+  <img src="https://img.shields.io/badge/Vite-7.0.4-7D5FFF?style=for-the-badge&logo=vite&logoColor=7D5FFF&labelColor=0A0A0A" />
+  <img src="https://img.shields.io/badge/TailwindCSS-4.1.11-00FFC6?style=for-the-badge&logo=tailwindcss&logoColor=00FFC6&labelColor=0A0A0A" />
+</p>
 
-The application is structured using **reusable, modular components**, with prop validation handled via `prop-types`. It supports **client-side routing** using `react-router-dom`, enabling smooth navigation between sections. The **typewriter-effect** library is used for dynamic text animations, while **EmailJS** integration powers a real-time, working contact form. Additionally, **react-toastify** provides non-intrusive toast notifications for user feedback, and **Google Analytics** integration helps track visitor insights and engagement.
+# ⚡ **Personal Portfolio – React + Vite + Tailwind CSS** ⚡
 
-Optimized for both **performance** and **scalability**, this portfolio serves as a professional and visually engaging platform to showcase my **skills**, **experience**, **projects** and **educational background**.
+A fully responsive, animated, neon-themed single-page portfolio built using:
 
-## 🚀 Tech Stacks
+- **React 19**
+- **Vite 7**
+- **Tailwind CSS 4**
+- **Framer Motion**
+- **React Parallax Tilt**
+- **EmailJS + Toastify**
+- **Google Analytics (GA4)**
+  
+🔗 **Live Demo:** https://ashutoshdevportfolio.netlify.app
 
-**Core Technologies**
+# 🌌 **Overview**
 
-- ⚛️ React 19
-- ⚡ Vite
-- 🎨 Tailwind CSS 4
-- 🧩 Core CSS 3
+This portfolio is designed with a futuristic neon UI, smooth animations, glassmorphism effects, glowing text, and high-performance rendering.
 
-**Libraries & Plugins**
+### It includes:
+- Section-based **single page** layout (no routing)
+- **Animated headings** with gradients + motion effects
+- **Parallax tilt** cards for skills/projects
+- **Typewriter effect** dynamic titles
+- **EmailJS contact form** with toast notifications
+- **Google Analytics (GA4)** integration
+- **Data-driven content** via `constants.js`
 
-- 🔀 `react-router-dom` : Routing
-- 🎥 `framer-motion` : Animations & transitions
-- 🎛️ `react-icons` : Icon packs
-- 🌀 `react-parallax-tilt` : 3D tilt effects
-- 🔔 `react-toastify` : Toast notifications
-- ⌨️ `typewriter-effect` : Typing animation
-- 📧 `@emailjs/browser` : Get In Touch form email service
-- 📦 `prop-types` : Component props validation
+# 🔥 **Features**
 
-**Tooling**
+## 🌀 Modern & Responsive UI
+- 100% mobile-friendly  
+- Smooth scrolling  
+- Sections: About, Skills, Experience, Projects, Education, Certifications, Contact  
 
-- 🧹 ESLint
-- ⚙️ Tailwind Plugin via `@tailwindcss/vite`
-- 🧪 Vite Dev, Build and Preview Scripts
-- 📊 Google Analytics : Visitor tracking & insights
+## 🎛 Animated Experience
+- Neon glowing headings  
+- Parallax effects  
+- Motion transitions  
+- Hover elevation, modals, animated borders  
 
+## 📡 Data Driven Content
+All major content is inside **`src/constants.js`** including:
 
-## 📁 Project Structure (Alphabetically Sorted)
+- Skills  
+- Experience  
+- Projects  
+- Education  
+- Certifications  
+
+## ✉ EmailJS Contact Form
+- Uses `@emailjs/browser`  
+- Validated using HTML patterns  
+- Toast notifications via `react-toastify`  
+- Env variables for secure keys  
+
+## 📈 Google Analytics
+GA4 tracking enabled via snippet in `index.html`.
+
+# 🧩 **Tech Stacks**
+
+### ⚛ Core
+- React 19  
+- Vite 7  
+- Tailwind CSS 4  
+
+### 🎨 UI & Animations
+- framer-motion  
+- react-parallax-tilt  
+- react-icons  
+
+### 📬 Forms & Notifications
+- @emailjs/browser  
+- react-toastify  
+
+### 🔤 Text Effects
+- typewriter-effect  
+
+### 🛠 Tooling
+- ESLint  
+- Tailwind Vite Plugin  
+- PropTypes
+
+# 🧱 **Project Structure**
+
 ```
 ├── .env
 ├── .git
@@ -86,49 +141,159 @@ Optimized for both **performance** and **scalability**, this portfolio serves as
 │   └── main.jsx
 ├── tailwind.config.js
 └── vite.config.js
+
 ```
-## 📸 Project Section Screenshots
+# 🖼️ Screenshots
 
 ### 1️⃣ About Section
-
-<img width="1875" height="945" alt="ReactPortfolio" src="https://github.com/user-attachments/assets/b7dbd637-46ec-42a5-8980-a16d051a0042" />
+<img width="1877" height="943" alt="About" src="https://github.com/user-attachments/assets/7b0de73f-c824-4729-80d5-f76a69f6b5b8" />
 
 ### 2️⃣ Skills Section
+<img width="1873" height="944" alt="tech-stack-1" src="https://github.com/user-attachments/assets/a78abd0b-890a-4a57-b3a4-64d15102dfbc" />
 
-<img width="1881" height="956" alt="skills" src="https://github.com/user-attachments/assets/794b109e-402f-4480-821d-df09234a8502" />
+<img width="1880" height="947" alt="tech-stack-2" src="https://github.com/user-attachments/assets/deac6ec3-dfa1-47a4-81e9-86fe3ae16150" />
 
 ### 3️⃣ Experience Section
-
-<img width="1882" height="953" alt="exp" src="https://github.com/user-attachments/assets/9bfabb10-cdc4-4290-97c2-d41b0b118132" />
+<img width="1883" height="948" alt="expercience" src="https://github.com/user-attachments/assets/c2f4f007-c50a-4d67-bbd3-0d62c4503c28" />
 
 ### 4️⃣ Project Section
-
-<img width="1884" height="948" alt="projects" src="https://github.com/user-attachments/assets/802f11d4-f266-4380-bd3c-7bf7b4007360" />
+<img width="1882" height="949" alt="project" src="https://github.com/user-attachments/assets/a32ac868-0678-4a48-9b34-e1ba2f4664d1" />
 
 ### 5️⃣ Education Section
+<img width="1879" height="948" alt="education-1" src="https://github.com/user-attachments/assets/dcce8226-9174-488b-b820-552099d32c6e" />
 
-<img width="1880" height="957" alt="edu" src="https://github.com/user-attachments/assets/474984b4-0790-4ff4-a64e-f472724336e3" />
+<img width="1874" height="940" alt="education-2" src="https://github.com/user-attachments/assets/a9b89953-002f-4224-b309-91278abe4ce3" />
 
-### 6️⃣ Contact Section
+### 6️⃣ Certifications Section
+<img width="1874" height="953" alt="certificate" src="https://github.com/user-attachments/assets/7afb92ff-cad5-4de8-97ce-5427a14666f6" />
 
-<img width="1880" height="959" alt="contact" src="https://github.com/user-attachments/assets/a1cad07c-4d98-4836-b601-af90d00fd153" />
+### 7️⃣ Contact Section
+<img width="1883" height="948" alt="contact" src="https://github.com/user-attachments/assets/0fd0effd-3b65-45c3-a522-1df7337d1964" />
 
-### 7️⃣ Footer Section
+### 8️⃣ Footer Section
+<img width="1876" height="946" alt="Footer" src="https://github.com/user-attachments/assets/8527a49d-0208-4935-90ae-4c9dbef2d9a9" />
 
-<img width="1882" height="951" alt="footer" src="https://github.com/user-attachments/assets/1329db1a-45cd-4395-9fe4-3132a3a12585" />
+# ⚙️ **Key Components & Their Role**
 
+### `src/main.jsx`
+Bootstraps your React app.
 
-## 📞 Contact
+### `src/App.jsx`
+- Wraps all sections  
+- Applies neon grid background + blur blobs  
 
-Designed and Developed by **Ashutosh Pradhan**💝
+### `src/constants.js`
+Central config file controlling:
 
-- **Portfolio**: [https://ashutoshdevportfolio.netlify.app](https://ashutoshdevportfolio.netlify.app)
-- **Email**: [contactwithashuind@gmail.com](mailto:contactwithashuind@gmail.com)
-- **LinkedIn**: [https://www.linkedin.com/in/ashutosh-pradhan05](https://www.linkedin.com/in/ashutosh-pradhan05)
-- **Twitter**: [https://x.com/Ashutoshtwitind](https://x.com/Ashutoshtwitind)
-- **Facebook** : [https://www.facebook.com/ashutosh.pradhan.ind](https://www.facebook.com/ashutosh.pradhan.ind)
-- **Instagram** : [https://www.instagram.com/ashutosh.pradhan.ind](https://www.instagram.com/ashutosh.pradhan.ind)
+- Skills  
+- Projects  
+- Experience  
+- Education  
+- Certifications  
 
-Feel free to reach out for any queries or support!
+### `src/BlurBlob.jsx`
+Reusable glowing animated blob using Tailwind.
 
-### Thank you for visiting my project.😊
+# ✉ **EmailJS Configuration**
+
+### `.env`
+```
+(Replace with your EmailJS Key and IDs)
+
+VITE_EMAILJS_SERVICE_ID=xxxx
+VITE_EMAILJS_TEMPLATE_ID=xxxx
+VITE_EMAILJS_PUBLIC_KEY=xxxx
+
+````
+
+### Send Form
+```js
+emailjs.sendForm(
+  import.meta.env.VITE_EMAILJS_SERVICE_ID,
+  import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+  form.current,
+  import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+);
+````
+
+# 📡 **Google Analytics Setup**
+
+Replace with your GA-ID:
+
+```html
+<script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "YOUR_ID");
+</script>
+```
+
+# 🚀 Getting Started
+
+### Requirements
+
+```
+Node 18+
+npm
+```
+
+### Install
+
+```bash
+git clone https://github.com/Ashutosh-Pradhan-05/Ashutosh-Portfolio.git
+cd Ashutosh-Portfolio
+npm install
+```
+
+### Run
+
+```bash
+npm run dev
+```
+
+### Build
+
+```bash
+npm run build
+```
+
+### Preview
+
+```bash
+npm run preview
+```
+
+# 🌍 **Deployment**
+
+### Works on:
+
+* Netlify
+* Vercel
+* GitHub Pages
+
+### Settings
+
+```
+Build command: npm run build
+Publish directory: dist
+```
+
+Add env variables for EmailJS.
+
+# 👨‍🚀 **Author**
+
+**Ashutosh Pradhan**
+
+🔗 Portfolio: [https://ashutoshdevportfolio.netlify.app](https://ashutoshdevportfolio.netlify.app)
+
+📧 Email: [contactwithashuind@gmail.com](mailto:contactwithashuind@gmail.com)
+
+💼 LinkedIn: [https://linkedin.com/in/ashutosh-pradhan05](https://linkedin.com/in/ashutosh-pradhan05)
+
+🐦 X.com: [https://x.com/Ashutoshtwitind](https://x.com/Ashutoshtwitind)
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=24&duration=3000&pause=1000&color=8A2BE2&center=true&vCenter=true&width=800&lines=Thank+you+for+checking+out+my+portfolio!😊;Feel+free+to+connect+anytime." />
+</p>
