@@ -40,7 +40,7 @@ Optimized for both **performance** and **scalability**, this portfolio serves as
 ---
 
 ## 📁 Project Structure (Alphabetically Sorted)
-.
+```
 ├── .git
 ├── dist
 ├── index.html
@@ -86,7 +86,7 @@ Optimized for both **performance** and **scalability**, this portfolio serves as
 │   └── main.jsx
 ├── tailwind.config.js
 └── vite.config.js
-
+```
 ## 📸 Project Section Screenshots
 
 ### 1️⃣ About Section
