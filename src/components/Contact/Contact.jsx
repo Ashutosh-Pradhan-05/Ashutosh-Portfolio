@@ -85,10 +85,10 @@ const Contact = () => {
 
       {/* Contact Form */}
       <div className="mt-8 w-full max-w-lg bg-radial from-[#050414] from-50% to-[#2c076c] p-6 rounded-lg shadow-lg border border-gray-700">
-        <h3 className="text-xl font-semibold text-white text-center flex items-center justify-center gap-1">
-          GET IN TOUCH&nbsp; <VscCode className="text-[#0d6efd]" size={36} />
-        </h3>
-        <div className="w-56 h-1 bg-gradient-to-r from-[#ff7f50] from-1% via-[#8245ec] via-50% to-[#ff7f50] to-99% mx-auto mt-0 mb-5"></div>
+        <h2 className="text-2xl font-semibold text-white text-center flex items-center justify-center gap-1">
+          GET IN TOUCH&nbsp; <VscCode className="text-[#0d6efd]" size={40} />
+        </h2>
+        <div className="w-60 h-1 bg-gradient-to-r from-[#ff7f50] from-1% via-[#8245ec] via-50% to-[#ff7f50] to-99% mx-auto mt-0 mb-5"></div>
 
         <form
           ref={form}
@@ -101,7 +101,7 @@ const Contact = () => {
             name="user_name"
             pattern="[A-Za-z\s.]{2,50}"
             placeholder="Your Name *"
-            className="w-full p-3 rounded-md text-white border border-gray-600 focus:outline-none focus:border-purple-500 hover:border-1 focus:border-2"
+            className="w-full p-3 rounded-md text-white border-2 border-gray-600 focus:outline-none focus:border-purple-500 hover:border-2 focus:border-2"
           />
           <input
             required
@@ -110,20 +110,20 @@ const Contact = () => {
             placeholder="Your Email *"
             pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             title="Please enter a valid email address"
-            className="w-full p-3 rounded-md text-white border border-gray-600 focus:outline-none focus:border-purple-500 hover:border-1 focus:border-2"
+            className="w-full p-3 rounded-md text-white border-2 border-gray-600 focus:outline-none focus:border-purple-500 hover:border-2 focus:border-2"
           />
           <input
             required
             type="text"
             name="subject"
             placeholder="Subject *"
-            className="w-full p-3 rounded-md text-white border border-gray-600 focus:outline-none focus:border-purple-500 hover:border-1 focus:border-2"
+            className="w-full p-3 rounded-md text-white border-2 border-gray-600 focus:outline-none focus:border-purple-500 hover:border-2 focus:border-2"
           />
           <textarea
             rows="5"
             name="message"
             placeholder="Message (Optional)"
-            className="w-full p-3 rounded-md text-white border border-gray-600 focus:outline-none focus:border-purple-500 hover:border-1 focus:border-2"
+            className="w-full p-3 rounded-md text-white border-2 border-gray-600 focus:outline-none focus:border-purple-500 hover:border-2 focus:border-2"
           />
 
           {/* Send Button */}
