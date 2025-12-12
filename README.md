@@ -37,7 +37,6 @@ Optimized for both **performance** and **scalability**, this portfolio serves as
 - 🧪 Vite Dev, Build and Preview Scripts
 - 📊 Google Analytics : Visitor tracking & insights
 
----
 
 ## 📁 Project Structure (Alphabetically Sorted)
 ```
@@ -117,7 +116,6 @@ Optimized for both **performance** and **scalability**, this portfolio serves as
 
 <img width="1882" height="951" alt="footer" src="https://github.com/user-attachments/assets/1329db1a-45cd-4395-9fe4-3132a3a12585" />
 
----
 
 ## 📞 Contact
 
