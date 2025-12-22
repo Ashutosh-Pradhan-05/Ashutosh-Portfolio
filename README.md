@@ -97,6 +97,7 @@ GA4 tracking enabled via snippet in `index.html`.
 ```
 ├── .env
 ├── .git
+├── .gitignore
 ├── dist
 ├── index.html
 ├── node_modules
