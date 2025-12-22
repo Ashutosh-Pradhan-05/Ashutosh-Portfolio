@@ -18,6 +18,7 @@ A fully responsive, animated, neon-themed single-page portfolio built using:
 - **Vite 7**
 - **Tailwind CSS 4**
 - **Framer Motion**
+- **React Snowfall**
 - **React Parallax Tilt**
 - **EmailJS + Toastify**
 - **Google Analytics (GA4)**
@@ -31,6 +32,7 @@ This portfolio is designed with a futuristic neon UI, smooth animations, glassmo
 ### It includes:
 - Section-based **single page** layout (no routing)
 - **Animated headings** with gradients + motion effects
+- **React Snowfall** for snowfall effects in the page
 - **Parallax tilt** cards for skills/projects
 - **Typewriter effect** dynamic titles
 - **EmailJS contact form** with toast notifications
@@ -45,7 +47,8 @@ This portfolio is designed with a futuristic neon UI, smooth animations, glassmo
 - Sections: About, Skills, Experience, Projects, Education, Certifications, Contact  
 
 ## 🎛 Animated Experience
-- Neon glowing headings  
+- Neon glowing headings
+- Showfall effects
 - Parallax effects  
 - Motion transitions  
 - Hover elevation, modals, animated borders  
@@ -76,7 +79,8 @@ GA4 tracking enabled via snippet in `index.html`.
 - Tailwind CSS 4  
 
 ### 🎨 UI & Animations
-- framer-motion  
+- framer-motion
+- react-snowfall
 - react-parallax-tilt  
 - react-icons  
 
