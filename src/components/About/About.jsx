@@ -3,12 +3,28 @@ import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import Typewriter from "typewriter-effect";
 import profileImage from "../../assets/profile.jpg";
+import { Snowfall } from "react-snowfall";
 const About = () => {
   return (
     <section
       id="about"
       className="px-[6vw] md:px-[5vw] lg:px-[12vw] font-sans mt-16 md:mt-24 lg:mt-32"
     >
+      <Snowfall
+        snowflakeCount={120}
+        speed={[0.2, 0.8]}
+        wind={[-0.2, 0.5]}
+        radius={[0.5, 2.5]}
+        opacity={[0.4, 0.9]}
+        rotationSpeed={[-0.5, 0.5]}
+        style={{
+          position: "fixed",
+          width: "100vw",
+          height: "100vh",
+          zIndex: 0,
+          pointerEvents: "none",
+        }}
+      />
       <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8 md:gap-16 lg:gap-20">
         {/* left side */}
         <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
