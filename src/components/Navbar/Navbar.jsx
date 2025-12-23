@@ -68,7 +68,7 @@ const Navbar = () => {
             repeatType: "loop",
             ease: "easeInOut",
           }}
-          className={`hidden md:inline-flex items-center gap-1 font-semibold cursor-pointer ${
+          className={`hidden md:inline-flex items-center gap-1 font-semibold ${
             isScrolled ? "text-[#0d6efd]" : "text-white"
           }`}
         >
@@ -88,7 +88,7 @@ const Navbar = () => {
               <li key={item.id} className="text-white">
                 <button
                   onClick={() => handleMenuItemClick(item.id)}
-                  className="font-bold cursor-pointer hover:scale-110 transition-transform hover:text-[#8245ec]"
+                  className="font-bold cursor-none hover:scale-110 transition-transform hover:text-[#8245ec]"
                 >
                   {item.label}
                 </button>
@@ -103,7 +103,7 @@ const Navbar = () => {
             href="https://www.linkedin.com/in/ashutosh-pradhan05"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-[#8245ec] sm:hover:scale-125 transition-transform"
+            className="text-white hover:text-[#8245ec] sm:hover:scale-125 transition-transform cursor-none"
           >
             <FaLinkedin size={24} />
           </a>
@@ -111,7 +111,7 @@ const Navbar = () => {
             href="https://github.com/Ashutosh-Pradhan-05"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-[#8245ec] sm:hover:scale-125 transition-transform"
+            className="text-white hover:text-[#8245ec] sm:hover:scale-125 transition-transform cursor-none"
           >
             <FaGithub size={24} />
           </a>
@@ -119,14 +119,14 @@ const Navbar = () => {
             href="https://x.com/Ashutoshtwitind"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-[#8245ec] sm:hover:scale-125 transition-transform"
+            className="text-white hover:text-[#8245ec] sm:hover:scale-125 transition-transform cursor-none"
           >
             <FaXTwitter size={24} />
           </a>
         </div>
 
         {/* Mobile View */}
-        <div className="md:hidden flex items-center justify-between w-full">
+        <div className="md:hidden flex items-center justify-between w-full cursor-none">
           {/* Left: React Logo */}
           <motion.div
             animate={{ rotate: 360, scale: [0.7, 1.5, 0.7] }}
@@ -137,7 +137,11 @@ const Navbar = () => {
           >
             <FaReact
               size={26}
-              className={`${isScrolled ? "text-[#0d6efd]" : "text-white"}`}
+              className={`${
+                isScrolled
+                  ? "text-[#0d6efd] cursor-none"
+                  : "text-white cursor-none"
+              }`}
             />
           </motion.div>
 
@@ -154,7 +158,7 @@ const Navbar = () => {
               repeatType: "loop",
               ease: "easeInOut",
             }}
-            className={`cursor-pointer inline-flex items-center gap-1 font-semibold ${
+            className={` inline-flex items-center gap-1 font-semibold ${
               scrollColor ? "text-[#0d6efd]" : "text-white"
             }`}
           >
@@ -170,14 +174,14 @@ const Navbar = () => {
           {/* Right: Menu Icon */}
           {isOpen ? (
             <FiX
-              className={`text-3xl cursor-pointer ${
+              className={`text-3xl  ${
                 isScrolled ? "text-[#0d6efd]" : "text-white"
               }`}
               onClick={() => setIsOpen(false)}
             />
           ) : (
             <FiMenu
-              className={`text-3xl cursor-pointer ${
+              className={`text-3xl  ${
                 isScrolled ? "text-[#0d6efd]" : "text-white"
               }`}
               onClick={() => setIsOpen(true)}
@@ -199,10 +203,7 @@ const Navbar = () => {
           >
             <ul className="flex flex-col items-center space-y-4 py-4 text-gray-300">
               {menuItems.map((item) => (
-                <li
-                  key={item.id}
-                  className="cursor-pointer hover:text-white font-bold"
-                >
+                <li key={item.id} className=" hover:text-white font-bold">
                   <button onClick={() => handleMenuItemClick(item.id)}>
                     {item.label}
                   </button>

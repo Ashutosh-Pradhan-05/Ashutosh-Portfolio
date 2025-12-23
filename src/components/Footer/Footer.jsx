@@ -37,7 +37,7 @@ const Footer = () => {
             repeatType: "loop",
             ease: "easeInOut",
           }}
-          className="flex items-center text-xl font-semibold cursor-pointer"
+          className="flex items-center text-xl font-semibold"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           <span className="me-[-0.5px]">
@@ -68,7 +68,7 @@ const Footer = () => {
             <button
               key={index}
               onClick={() => handleScroll(item.id)}
-              className="text-white hover:text-purple-600 hover:cursor-pointer md:hover:scale-110 transition-transform text-md sm:text-base my-1 font-bold"
+              className="text-white hover:text-purple-600 cursor-none md:hover:scale-110 transition-transform text-md sm:text-base my-1 font-bold"
             >
               {item.name}
             </button>
@@ -79,29 +79,35 @@ const Footer = () => {
         <div className="flex flex-wrap justify-center space-x-4 mt-6 md:scale-125 text-white">
           {[
             {
-              icon: <FaLinkedin />,
+              icon: <FaLinkedin className="cursor-none" />,
               link: "https://www.linkedin.com/in/ashutosh-pradhan05",
             },
             {
-              icon: <FaGithub />,
+              icon: <FaGithub className="cursor-none" />,
               link: "https://github.com/Ashutosh-Pradhan-05",
             },
-            { icon: <FaXTwitter />, link: "https://x.com/Ashutoshtwitind" },
             {
-              icon: <SiZoho size={30} />,
+              icon: <FaXTwitter className="cursor-none" />,
+              link: "https://x.com/Ashutoshtwitind",
+            },
+            {
+              icon: <SiZoho size={30} className="cursor-none" />,
               link: "mailto:iamashutoshpradhan@zohomail.in",
             },
-            { icon: <BiLogoTelegram />, link: "https://t.me/ashutosh_pradhan" },
             {
-              icon: <FaInstagram />,
+              icon: <BiLogoTelegram className="cursor-none" />,
+              link: "https://t.me/ashutosh_pradhan",
+            },
+            {
+              icon: <FaInstagram className="cursor-none" />,
               link: "https://www.instagram.com/ashutosh.pradhan.ind",
             },
             {
-              icon: <SiMessenger />,
+              icon: <SiMessenger className="cursor-none" />,
               link: "https://m.me/ashutosh.pradhan.ind",
             },
             {
-              icon: <FaFacebookSquare />,
+              icon: <FaFacebookSquare className="cursor-none" />,
               link: "https://www.facebook.com/ashutosh.pradhan.ind",
             },
           ].map((item, index) => (
@@ -145,7 +151,7 @@ const Footer = () => {
             {/* Scroll to Top using Upper Icon */}
             <motion.button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="p-2 rounded-full text-white bg-gradient-to-r from-pink-500 to-purple-600 shadow-lg cursor-pointer"
+              className="p-2 rounded-full text-white bg-gradient-to-r from-pink-500 to-purple-600 shadow-lg cursor-none"
               title="Back to Top"
               animate={{
                 scale: [0.8, 1, 0.8], // subtle bounce

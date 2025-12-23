@@ -24,26 +24,26 @@ const Contact = () => {
         () => {
           setIsSent(true);
           form.current.reset(); // Reset the form fields after you sending your data.
-          toast.success("Your message sent successfully! ✅", {
+          toast.success("Your message sent successfully!", {
             position: "top-right",
             autoClose: 4000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
-            theme: "dark",
+            theme: "colored",
           });
         },
         (error) => {
           console.error("Error sending message:", error);
-          toast.error("❌ Failed to send your message..Please try again.", {
+          toast.error("Failed to send your message..Please try again.", {
             position: "top-right",
             autoClose: 4000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
-            theme: "dark",
+            theme: "colored",
           });
         }
       );
@@ -52,10 +52,10 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center justify-center py-24 px-[6vw] md:px-[5vw] lg:px-[12vw]"
+      className="relative z-10  flex flex-col items-center justify-center py-24 px-[6vw] md:px-[5vw] lg:px-[12vw]"
     >
       {/* Toast Container */}
-      <ToastContainer />
+      <ToastContainer style={{ marginTop: "4rem" }} />
 
       {/* Section Title */}
       <div className="text-center mb-16">
@@ -101,7 +101,7 @@ const Contact = () => {
             name="user_name"
             pattern="[A-Za-z\s.]{2,50}"
             placeholder="Your Name *"
-            className="w-full p-3 rounded-md text-white border-2 border-gray-600 focus:outline-none focus:border-purple-500 hover:border-2 focus:border-2"
+            className="w-full cursor-none p-3 rounded-md text-white border-2 border-gray-600 focus:outline-none focus:border-purple-500 hover:border-2 focus:border-2"
           />
           <input
             required
@@ -110,26 +110,26 @@ const Contact = () => {
             placeholder="Your Email *"
             pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             title="Please enter a valid email address"
-            className="w-full p-3 rounded-md text-white border-2 border-gray-600 focus:outline-none focus:border-purple-500 hover:border-2 focus:border-2"
+            className="w-full cursor-none p-3 rounded-md text-white border-2 border-gray-600 focus:outline-none focus:border-purple-500 hover:border-2 focus:border-2"
           />
           <input
             required
             type="text"
             name="subject"
             placeholder="Subject *"
-            className="w-full p-3 rounded-md text-white border-2 border-gray-600 focus:outline-none focus:border-purple-500 hover:border-2 focus:border-2"
+            className="w-full cursor-none p-3 rounded-md text-white border-2 border-gray-600 focus:outline-none focus:border-purple-500 hover:border-2 focus:border-2"
           />
           <textarea
             rows="5"
             name="message"
             placeholder="Message (Optional)"
-            className="w-full p-3 rounded-md text-white border-2 border-gray-600 focus:outline-none focus:border-purple-500 hover:border-2 focus:border-2"
+            className="w-full cursor-none p-3 rounded-md text-white border-2 border-gray-600 focus:outline-none focus:border-purple-500 hover:border-2 focus:border-2"
           />
 
           {/* Send Button */}
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-purple-600 to-pink-500 py-3 text-white font-semibold rounded-md hover:from-[#6f3de0] hover:to-[#9333ea] transition duration-500 hover:cursor-pointer hover:scale-105 flex items-center justify-center gap-2"
+            className="w-full bg-gradient-to-r from-purple-600 to-pink-500 py-3 text-white font-semibold rounded-md hover:from-[#6f3de0] hover:to-[#9333ea] transition duration-500 cursor-none hover:scale-105 flex items-center justify-center gap-2"
           >
             Send <IoSend className="text-md" />
           </button>

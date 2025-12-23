@@ -12,9 +12,9 @@ const About = () => {
     >
       <Snowfall
         snowflakeCount={120}
-        speed={[0.2, 0.8]}
+        // speed={[0.2, 0.8]}
         wind={[-0.2, 0.5]}
-        radius={[0.5, 2.5]}
+        radius={[0.5, 1.5]}
         opacity={[0.4, 0.9]}
         rotationSpeed={[-0.5, 0.5]}
         style={{
@@ -25,7 +25,7 @@ const About = () => {
           pointerEvents: "none",
         }}
       />
-      <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8 md:gap-16 lg:gap-20">
+      <div className="relative z-10 flex flex-col-reverse md:flex-row justify-between items-center gap-8 md:gap-16 lg:gap-20">
         {/* left side */}
         <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
           <h1 className="text-gray-300 text-2xl sm:text-4xl md:text-5xl font-bold  mb-2 leading-tight">
@@ -183,12 +183,12 @@ const About = () => {
           <div className="mt-6 md:mt-14 w-full flex flex-col md:flex-row items-center justify-center md:justify-center gap-3 md:gap-4">
             {/* Primary button - DOWNLOAD CV */}
             <a
-              href="https://drive.google.com/file/d/1JRbm_fBUaUAIoaOJ4LUnpqOYhVNmhjN0/view"
+              href="https://drive.google.com/file/d/1QvT3QD2CPLk8xrKa2aJ8Q6bOkhNGqxYp/view"
               target="_blank"
               rel="noopener noreferrer"
               role="button"
               aria-label="Download CV (opens in new tab)"
-              className="inline-block text-white py-3 px-7 rounded-full mt-3 text-lg font-semibold transition duration-300 transform hover:scale-105 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-[#6f3de0] hover:to-[#9333ea]"
+              className="cursor-none inline-block text-white py-3 px-7 rounded-full mt-3 text-lg font-semibold transition duration-300 transform hover:scale-105 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-[#6f3de0] hover:to-[#9333ea]"
             >
               DOWNLOAD CV
             </a>
@@ -198,7 +198,7 @@ const About = () => {
               href="#contact"
               role="button"
               aria-label="Contact me"
-              className="inline-block text-white py-3 px-8 rounded-full mt-3 text-lg font-semibold transition duration-300 transform hover:scale-105 bg-gradient-to-r from-purple-600 to-pink-500 hover:from-[#6f3de0] hover:to-[#9333ea]"
+              className="cursor-none inline-block text-white py-3 px-8 rounded-full mt-3 text-lg font-semibold transition duration-300 transform hover:scale-105 bg-gradient-to-r from-purple-600 to-pink-500 hover:from-[#6f3de0] hover:to-[#9333ea]"
             >
               CONTACT ME
             </a>

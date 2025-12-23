@@ -19,7 +19,7 @@ const Work = () => {
   return (
     <section
       id="work"
-      className="py-24 pb-24 px-[6vw] md:px-[5vw] lg:px-[12vw] font-sans relative"
+      className="py-24 pb-24 px-[6vw] md:px-[5vw] lg:px-[12vw] font-sans relative cursor-none"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
@@ -60,7 +60,7 @@ const Work = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full max-h-80 object-cover rounded-tl-xl rounded-tr-xl cursor-pointer transition-transform duration-300 hover:scale-105"
+                className="w-full max-h-80 object-cover rounded-tl-xl rounded-tr-xl transition-transform duration-300 hover:scale-105"
               />
             </div>
             <div className="p-6">
@@ -88,7 +88,7 @@ const Work = () => {
               <div className="flex justify-center">
                 <button
                   onClick={() => handleOpenModal(project)}
-                  className="bg-purple-600 hover:bg-purple-800 text-white px-6 py-2 rounded-xl text-sm sm:text-base font-semibold flex items-center justify-center gap-2 cursor-pointer hover:scale-110 transition-all duration-200"
+                  className="bg-purple-600 hover:bg-purple-800 text-white px-6 py-2 rounded-xl text-sm sm:text-base font-semibold flex items-center justify-center gap-2 hover:scale-110 transition-all duration-200 cursor-none"
                 >
                   <IoEye className="text-lg sm:text-xl" />
                   View Project
@@ -106,7 +106,7 @@ const Work = () => {
             <div className="flex justify-end p-4">
               <button
                 onClick={handleCloseModal}
-                className="bg-purple-600 hover:bg-purple-800 text-white px-3 py-1 rounded-xl text-sm sm:text-base font-semibold flex items-center justify-center gap-2 cursor-pointer"
+                className="bg-purple-600 hover:bg-purple-800 text-white px-3 py-1 rounded-xl text-sm sm:text-base font-semibold flex items-center justify-center gap-2 cursor-none"
               >
                 <ImUndo2 className="text-lg sm:text-xl" />
                 Back
@@ -130,7 +130,7 @@ const Work = () => {
                     href={selectedProject.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-purple-600 hover:bg-purple-800 text-white text-xs lg:text-sm font-semibold px-1 py-0.5 rounded-lg transition duration-300 flex items-center gap-1"
+                    className="bg-purple-600 hover:bg-purple-800 text-white text-xs lg:text-sm font-semibold px-1 py-0.5 rounded-lg transition duration-300 flex items-center gap-1 cursor-none hover:scale-110"
                   >
                     View{" "}
                     <LuExternalLink className="text-white text-sm lg:text-base" />

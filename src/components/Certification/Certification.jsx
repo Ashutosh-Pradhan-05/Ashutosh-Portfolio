@@ -75,7 +75,7 @@ const Certification = () => {
             <div className="pt-16 sm:pt-20 lg:pt-24 px-5 pb-6">
               {/* Certificate Image */}
               <div
-                className="flex items-center justify-center cursor-pointer"
+                className="flex items-center justify-center"
                 onClick={() => handleOpenModal(cert)}
               >
                 <img
@@ -161,7 +161,7 @@ const Certification = () => {
                 <div className="flex flex-col justify-center items-center gap-3 w-full mt-5">
                   <button
                     onClick={() => handleOpenModal(cert)}
-                    className="w-full hover:cursor-pointer sm:w-4/5 lg:w-[85%] xl:w-[90%] bg-gradient-to-r from-pink-500 to-purple-600 hover:from-[#6f3de0] hover:to-[#9333ea] text-white px-6 py-2.5 rounded-xl text-sm sm:text-base font-semibold flex items-center justify-center gap-3 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110"
+                    className="w-full cursor-none sm:w-4/5 lg:w-[85%] xl:w-[90%] bg-gradient-to-r from-pink-500 to-purple-600 hover:from-[#6f3de0] hover:to-[#9333ea] text-white px-6 py-2.5 rounded-xl text-sm sm:text-base font-semibold flex items-center justify-center gap-3 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110"
                   >
                     <PiCertificateFill size={28} />
                     <span className="text-sm">View Credential</span>
@@ -169,7 +169,7 @@ const Certification = () => {
 
                   <button
                     onClick={() => handleOpenVerify(cert)}
-                    className="w-full hover:cursor-pointer sm:w-4/5 lg:w-[85%] xl:w-[90%] bg-gradient-to-r from-purple-600 to-pink-500 hover:from-[#6f3de0] hover:to-[#9333ea] hover:bg-white/5 text-white px-6 py-2.5 rounded-xl text-sm sm:text-base font-semibold flex items-center justify-center gap-3 shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300"
+                    className="w-full cursor-none sm:w-4/5 lg:w-[85%] xl:w-[90%] bg-gradient-to-r from-purple-600 to-pink-500 hover:from-[#6f3de0] hover:to-[#9333ea] hover:bg-white/5 text-white px-6 py-2.5 rounded-xl text-sm sm:text-base font-semibold flex items-center justify-center gap-3 shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300"
                   >
                     <FaFileCircleCheck size={26} />
                     <span className="text-sm">Verify Credential</span>
