@@ -80,7 +80,7 @@ const Experience = () => {
                 <div className="flex flex-col justify-between">
                   <div className="flex items-center space-x-1">
                     <HiOutlineBriefcase className="text-white text-xl" />
-                    <h3 className="text-xl sm:text-2xl font-semibold text-white">
+                    <h3 className="text-md sm:text-xl font-semibold text-white">
                       {experience.role}
                     </h3>
                     {/* Certificate Link */}
