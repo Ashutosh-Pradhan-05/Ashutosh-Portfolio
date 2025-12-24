@@ -50,7 +50,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 w-full z-50 transition duration-300 px-4 sm:px-6 md:px-10 lg:px-[10vw] xl:px-[20vw] ${
         isScrolled
-          ? "bg-[#0d6efd]/30 backdrop-blur-md shadow-md"
+          ? "bg-[#8245ec]/50 backdrop-blur-md shadow-md"
           : "bg-transparent"
       }`}
     >
@@ -69,7 +69,7 @@ const Navbar = () => {
             ease: "easeInOut",
           }}
           className={`hidden md:inline-flex items-center gap-1 font-semibold ${
-            isScrolled ? "text-[#0d6efd]" : "text-white"
+            isScrolled ? "text-pink-500" : "text-white"
           }`}
         >
           <FaLessThan className={`text-base me-[-3px]`} />
@@ -88,7 +88,7 @@ const Navbar = () => {
               <li key={item.id} className="text-white">
                 <button
                   onClick={() => handleMenuItemClick(item.id)}
-                  className="font-bold cursor-none hover:scale-110 transition-transform hover:text-[#8245ec]"
+                  className="font-bold cursor-none hover:scale-110 transition-transform hover:text-pink-500"
                 >
                   {item.label}
                 </button>
@@ -103,7 +103,7 @@ const Navbar = () => {
             href="https://www.linkedin.com/in/ashutosh-pradhan05"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-[#8245ec] sm:hover:scale-125 transition-transform cursor-none"
+            className="text-white hover:text-pink-500 sm:hover:scale-125 transition-transform cursor-none"
           >
             <FaLinkedin size={24} />
           </a>
@@ -111,7 +111,7 @@ const Navbar = () => {
             href="https://github.com/Ashutosh-Pradhan-05"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-[#8245ec] sm:hover:scale-125 transition-transform cursor-none"
+            className="text-white hover:text-pink-500 sm:hover:scale-125 transition-transform cursor-none"
           >
             <FaGithub size={24} />
           </a>
@@ -119,7 +119,7 @@ const Navbar = () => {
             href="https://x.com/Ashutoshtwitind"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-[#8245ec] sm:hover:scale-125 transition-transform cursor-none"
+            className="text-white hover:text-pink-500 sm:hover:scale-125 transition-transform cursor-none"
           >
             <FaXTwitter size={24} />
           </a>
@@ -139,7 +139,7 @@ const Navbar = () => {
               size={26}
               className={`${
                 isScrolled
-                  ? "text-[#0d6efd] cursor-none"
+                  ? "text-pink-500 cursor-none"
                   : "text-white cursor-none"
               }`}
             />
@@ -159,7 +159,7 @@ const Navbar = () => {
               ease: "easeInOut",
             }}
             className={` inline-flex items-center gap-1 font-semibold ${
-              scrollColor ? "text-[#0d6efd]" : "text-white"
+              scrollColor ? "text-pink-500" : "text-white"
             }`}
           >
             <FaLessThan className="text-base me-[-3px]" />
@@ -175,14 +175,14 @@ const Navbar = () => {
           {isOpen ? (
             <FiX
               className={`text-3xl  ${
-                isScrolled ? "text-[#0d6efd]" : "text-white"
+                isScrolled ? "text-pink-500" : "text-white"
               }`}
               onClick={() => setIsOpen(false)}
             />
           ) : (
             <FiMenu
               className={`text-3xl  ${
-                isScrolled ? "text-[#0d6efd]" : "text-white"
+                isScrolled ? "text-pink-500" : "text-white"
               }`}
               onClick={() => setIsOpen(true)}
             />
