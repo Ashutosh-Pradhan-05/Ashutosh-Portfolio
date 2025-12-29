@@ -34,6 +34,9 @@ import vercellogo from "./assets/tech_logo/vercel.png";
 import mcLogo from "./assets/tech_logo/mc.png";
 import npmLogo from "./assets/tech_logo/npm.png";
 import gaLogo from "./assets/tech_logo/google_analytics.png";
+import cursorLogo from "./assets/tech_logo/cursor.png";
+import windsurfLogo from "./assets/tech_logo/windsurf.png";
+import antigravityLogo from "./assets/tech_logo/antigravity.png";
 
 // Experience Section Logo's
 import tbLogo from "./assets/company_logo/thinkbridge.png"; // ThinkBridge
@@ -62,6 +65,7 @@ import oraclelogo from "./assets/certification_logo/oracle.png"; //Oracle Logo
 import wiprologo from "./assets/certification_logo/Wipro.png"; //Wipro Logo
 import oracle from "./assets/certification_logo/oracle1.png"; //Oracle
 import wipro from "./assets/certification_logo/wipro1.png"; //Wipro
+import { a } from "framer-motion/client";
 
 export const SkillsInfo = [
   {
@@ -101,19 +105,22 @@ export const SkillsInfo = [
     ],
   },
   {
-    title: "Developer Tools & Platforms",
+    title: "Developer Tools, Platforms & AI IDEs",
     skills: [
       { name: "Git", logo: gitLogo },
       { name: "GitHub", logo: githubLogo },
       { name: "Postman", logo: postmanLogo },
       { name: "EmailJS", logo: emailjsLogo },
       { name: "Vite", logo: vitelogo },
-      { name: "VS Code", logo: vscodeLogo },
+      { name: "NPM", logo: npmLogo },
       { name: "Netlify", logo: netlifyLogo },
       { name: "Vercel", logo: vercellogo },
       { name: "Compass", logo: mcLogo },
-      { name: "NPM", logo: npmLogo },
+      { name: "VS Code", logo: vscodeLogo },
+      { name: "Cursor AI", logo: cursorLogo },
+      { name: "Windsurf AI", logo: windsurfLogo },
       { name: "Google Analytics", logo: gaLogo },
+      { name: "Google Antigravity", logo: antigravityLogo },
     ],
   },
 ];
