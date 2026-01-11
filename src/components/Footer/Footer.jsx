@@ -146,7 +146,7 @@ const Footer = () => {
               Ashutosh Pradhan <GiSelfLove className="text-red-600" size={22} />
             </motion.span>
             <span className="text-gray-400">
-              &copy; 2025 All rights reserved.
+              &copy; 2026 All rights reserved.
             </span>
             {/* Scroll to Top using Upper Icon */}
             <motion.button
