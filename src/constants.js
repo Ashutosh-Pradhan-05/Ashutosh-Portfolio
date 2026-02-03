@@ -65,8 +65,6 @@ import oraclelogo from "./assets/certification_logo/oracle.png"; //Oracle Logo
 import wiprologo from "./assets/certification_logo/Wipro.png"; //Wipro Logo
 import oracle from "./assets/certification_logo/oracle1.png"; //Oracle
 import wipro from "./assets/certification_logo/wipro1.png"; //Wipro
-import { a } from "framer-motion/client";
-
 export const SkillsInfo = [
   {
     title: "Frontend Development",
@@ -216,8 +214,8 @@ export const education = [
   {
     id: 1,
     img: ghssLogo,
-    degree: "Intermediate • Science • CHSE",
-    school: "Gokarnika Higher Secondary School",
+    degree: "Intermediate • 12th · PCMB",
+    school: "Gokarnika H.S. School",
     location: "Jajpur, Odisha, India",
     date: "Jun 2018 - Mar 2020",
     grade: "64.83%",
@@ -231,7 +229,7 @@ export const education = [
     date: "Jun 2008 - Mar 2018",
     grade: "67.33%",
     desc: "I completed my primary and secondary education at Hatibari Nodal High School, Jajpur, under the Board of Secondary Education [BSE], Odisha. Beginning from Class 1 and continuing through Class 10, this decade-long academic journey laid the foundation of my intellectual growth and personal discipline. The school’s structured curriculum and emphasis on holistic learning nurtured my curiosity, academic consistency, and strong work ethic. These formative years not only equipped me with essential knowledge and values but also shaped the aspirations and core habits that continue to guide my educational and professional pursuits today.",
-    degree: "Schooling • 10th • BSE",
+    degree: "Schooling • 10th · HSC",
   },
 ];
 
