@@ -117,10 +117,10 @@ GA4 tracking enabled via snippet in `index.html`.
 │   │   ├── certification_logo/
 │   │   ├── company_logo/
 │   │   ├── education_logo/
-│   │   ├── portfolioicon.png
-│   │   ├── profile.jpg
 │   │   ├── tech_logo/
-│   │   └── work_logo/
+│   │   ├── work_logo/
+│   │   ├── portfolioiconbgyellow.png
+│   │   └── profile.webp
 │   ├── BlurBlob.jsx
 │   ├── components
 │   │   ├── About
