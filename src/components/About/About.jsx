@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import Typewriter from "typewriter-effect";
-import profileImage from "../../assets/profile.jpg";
+import profileImage from "../../assets/profile.webp";
 import { Snowfall } from "react-snowfall";
 const About = () => {
   return (
@@ -80,14 +80,15 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base text-justify sm:text-lg md:text-lg text-gray-400 mb-10 mt-4 leading-relaxed indent-14">
-            Versatile and technically proficient Computer Science graduate with
-            hands-on experience building responsive web applications using
-            React.js, Node.js, Express.js, MongoDB, Tailwind CSS and Bootstrap.
-            Skilled in full-stack development, RESTful API integration and
-            modern JavaScript libraries and frameworks. Committed to delivering
-            clean, maintainable code in Agile environments and collaborating
-            effectively within engineering teams to build pixel-perfect,
-            scalable, user-centric solutions.
+            Technically proficient Computer Science graduate specializing in
+            full-stack development with React, Node.js, Express.js, and MongoDB.
+            Experienced in developing high-performance, responsive web
+            applications and optimizing system performance. Skilled in
+            AI-assisted coding workflows using advanced AI models and AI
+            integrated IDEs to accelerate development, improve debugging
+            efficiency, and enhance code quality. Passionate about building
+            scalable, secure, and user-focused solutions in dynamic Agile
+            environments.
           </p>
         </div>
 
