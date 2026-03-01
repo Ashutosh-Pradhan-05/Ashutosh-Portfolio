@@ -32,7 +32,8 @@ const Skills = () => (
       />
       <p className="text-gray-400 mt-4 text-lg font-semibold text-justify sm:text-lg md:text-center">
         A showcase of my technical competencies and expertise, developed through
-        hands-on experience across diverse projects and real-world applications.{" "}
+        hands-on experience across diverse projects and real-world
+        applications.{" "}
       </p>
     </div>
     {/* Skill Categories */}

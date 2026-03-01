@@ -28,7 +28,9 @@ html {
 .border-gradient-ring {
   border: 6px solid transparent;
   background: linear-gradient(135deg, #7e22ce, #ec4899, #3b82f6) border-box;
-  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   animation: rotateGradient 6s linear infinite;

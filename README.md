@@ -1,4 +1,3 @@
-
 <p align="center">
 <img src="https://readme-typing-svg.herokuapp.com?font=Audiowide&size=32&duration=3000&pause=1000&color=00F0FF&center=true&vCenter=true&width=900&lines=Ashutosh+Pradhan's+Portfolio🧑‍💻;Developed+by+Ashutosh+Pradhan💝;React+19+%7C+Vite+7+%7C+Tailwind+CSS+4" />
 
@@ -22,7 +21,7 @@ A fully responsive, animated, neon-themed single-page portfolio built using:
 - **React Parallax Tilt**
 - **EmailJS + Toastify**
 - **Google Analytics (GA4)**
-  
+
 🔗 **Live Demo:** https://ashutoshdevportfolio.netlify.app
 
 # 🌌 **Overview**
@@ -30,6 +29,7 @@ A fully responsive, animated, neon-themed single-page portfolio built using:
 This portfolio is designed with a futuristic neon UI, smooth animations, glassmorphism effects, glowing text, and high-performance rendering.
 
 ### It includes:
+
 - Section-based **single page** layout (no routing)
 - **Animated headings** with gradients + motion effects
 - **React Snowfall** for snowfall effects in the page
@@ -42,58 +42,68 @@ This portfolio is designed with a futuristic neon UI, smooth animations, glassmo
 # 🔥 **Features**
 
 ## 🌀 Modern & Responsive UI
-- 100% mobile-friendly  
-- Smooth scrolling  
-- Sections: About, Skills, Experience, Projects, Education, Certifications, Contact  
+
+- 100% mobile-friendly
+- Smooth scrolling
+- Sections: About, Skills, Experience, Projects, Education, Certifications, Contact
 
 ## 🎛 Animated Experience
+
 - Neon glowing headings
 - Showfall effects
-- Parallax effects  
-- Motion transitions  
-- Hover elevation, modals, animated borders  
+- Parallax effects
+- Motion transitions
+- Hover elevation, modals, animated borders
 
 ## 📡 Data Driven Content
+
 All major content is inside **`src/constants.js`** including:
 
-- Skills  
-- Experience  
-- Projects  
-- Education  
-- Certifications  
+- Skills
+- Experience
+- Projects
+- Education
+- Certifications
 
 ## ✉ EmailJS Contact Form
-- Uses `@emailjs/browser`  
-- Validated using HTML patterns  
-- Toast notifications via `react-toastify`  
-- Env variables for secure keys  
+
+- Uses `@emailjs/browser`
+- Validated using HTML patterns
+- Toast notifications via `react-toastify`
+- Env variables for secure keys
 
 ## 📈 Google Analytics
+
 GA4 tracking enabled via snippet in `index.html`.
 
 # 🧩 **Tech Stacks**
 
 ### ⚛ Core
-- React 19  
-- Vite 7  
-- Tailwind CSS 4  
+
+- React 19
+- Vite 7
+- Tailwind CSS 4
 
 ### 🎨 UI & Animations
+
 - framer-motion
 - react-snowfall
-- react-parallax-tilt  
-- react-icons  
+- react-parallax-tilt
+- react-icons
 
 ### 📬 Forms & Notifications
-- @emailjs/browser  
-- react-toastify  
+
+- @emailjs/browser
+- react-toastify
 
 ### 🔤 Text Effects
-- typewriter-effect  
+
+- typewriter-effect
 
 ### 🛠 Tooling
-- ESLint  
-- Tailwind Vite Plugin  
+
+- ESLint
+- Tailwind Vite Plugin
 - PropTypes
 
 # 🧱 **Project Structure**
@@ -148,60 +158,74 @@ GA4 tracking enabled via snippet in `index.html`.
 └── vite.config.js
 
 ```
+
 # 🖼️ Screenshots
 
 ### 1️⃣ About Section
+
 <img width="1877" height="943" alt="About" src="https://github.com/user-attachments/assets/7b0de73f-c824-4729-80d5-f76a69f6b5b8" />
 
 ### 2️⃣ Skills Section
+
 <img width="1873" height="944" alt="tech-stack-1" src="https://github.com/user-attachments/assets/a78abd0b-890a-4a57-b3a4-64d15102dfbc" />
 
 <img width="1880" height="947" alt="tech-stack-2" src="https://github.com/user-attachments/assets/deac6ec3-dfa1-47a4-81e9-86fe3ae16150" />
 
 ### 3️⃣ Experience Section
+
 <img width="1883" height="948" alt="expercience" src="https://github.com/user-attachments/assets/c2f4f007-c50a-4d67-bbd3-0d62c4503c28" />
 
 ### 4️⃣ Project Section
+
 <img width="1882" height="949" alt="project" src="https://github.com/user-attachments/assets/a32ac868-0678-4a48-9b34-e1ba2f4664d1" />
 
 ### 5️⃣ Education Section
+
 <img width="1879" height="948" alt="education-1" src="https://github.com/user-attachments/assets/dcce8226-9174-488b-b820-552099d32c6e" />
 
 <img width="1874" height="940" alt="education-2" src="https://github.com/user-attachments/assets/a9b89953-002f-4224-b309-91278abe4ce3" />
 
 ### 6️⃣ Certifications Section
+
 <img width="1874" height="953" alt="certificate" src="https://github.com/user-attachments/assets/7afb92ff-cad5-4de8-97ce-5427a14666f6" />
 
 ### 7️⃣ Contact Section
+
 <img width="1883" height="948" alt="contact" src="https://github.com/user-attachments/assets/0fd0effd-3b65-45c3-a522-1df7337d1964" />
 
 ### 8️⃣ Footer Section
+
 <img width="1876" height="946" alt="Footer" src="https://github.com/user-attachments/assets/8527a49d-0208-4935-90ae-4c9dbef2d9a9" />
 
 # ⚙️ **Key Components & Their Role**
 
 ### `src/main.jsx`
+
 Bootstraps your React app.
 
 ### `src/App.jsx`
-- Wraps all sections  
-- Applies neon grid background + blur blobs  
+
+- Wraps all sections
+- Applies neon grid background + blur blobs
 
 ### `src/constants.js`
+
 Central config file controlling:
 
-- Skills  
-- Projects  
-- Experience  
-- Education  
-- Certifications  
+- Skills
+- Projects
+- Experience
+- Education
+- Certifications
 
 ### `src/BlurBlob.jsx`
+
 Reusable glowing animated blob using Tailwind.
 
 # ✉ **EmailJS Configuration**
 
 ### `.env`
+
 ```
 (Replace with your EmailJS Key and IDs)
 
@@ -209,27 +233,33 @@ VITE_EMAILJS_SERVICE_ID=xxxx
 VITE_EMAILJS_TEMPLATE_ID=xxxx
 VITE_EMAILJS_PUBLIC_KEY=xxxx
 
-````
+```
 
 ### Send Form
+
 ```js
 emailjs.sendForm(
   import.meta.env.VITE_EMAILJS_SERVICE_ID,
   import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
   form.current,
-  import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+  import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
 );
-````
+```
 
 # 📡 **Google Analytics Setup**
 
 Replace with your GA-ID:
 
 ```html
-<script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ID"></script>
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=YOUR_ID"
+></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() {
+    dataLayer.push(arguments);
+  }
   gtag("js", new Date());
   gtag("config", "YOUR_ID");
 </script>
@@ -274,9 +304,9 @@ npm run preview
 
 ### Works on:
 
-* Netlify
-* Vercel
-* GitHub Pages
+- Netlify
+- Vercel
+- GitHub Pages
 
 ### Settings
 
