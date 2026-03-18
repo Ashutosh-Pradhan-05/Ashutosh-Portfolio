@@ -37,6 +37,8 @@ import gaLogo from "./assets/tech_logo/google_analytics.png";
 import cursorLogo from "./assets/tech_logo/cursor.png";
 import windsurfLogo from "./assets/tech_logo/windsurf.png";
 import antigravityLogo from "./assets/tech_logo/antigravity.png";
+import githubcopilot from "./assets/tech_logo/githubcopilot.png";
+import traeai from "./assets/tech_logo/traeai.png";
 
 // Experience Section Logo's
 import tbLogo from "./assets/company_logo/thinkbridge.png"; // ThinkBridge
@@ -115,6 +117,8 @@ export const SkillsInfo = [
       { name: "Vercel", logo: vercellogo },
       { name: "Compass", logo: mcLogo },
       { name: "VS Code", logo: vscodeLogo },
+      { name: "GitHub Copilot", logo: githubcopilot },
+      { name: "Trae AI", logo: traeai },
       { name: "Cursor AI", logo: cursorLogo },
       { name: "Windsurf AI", logo: windsurfLogo },
       { name: "Google Analytics", logo: gaLogo },
