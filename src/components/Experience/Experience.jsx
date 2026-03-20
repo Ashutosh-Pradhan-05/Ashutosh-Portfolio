@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BsBuildings } from "react-icons/bs";
 import { experiences } from "../../constants";
+import { TbArrowBadgeRight } from "react-icons/tb";
 import { IoLocationOutline, IoCalendarOutline } from "react-icons/io5";
 import { HiExternalLink, HiOutlineBriefcase } from "react-icons/hi";
 
@@ -120,9 +121,25 @@ const Experience = () => {
                 </div>
               </div>
 
-              <p className="mt-4 text-gray-400 text-justify indent-10">
-                {experience.desc}
-              </p>
+              <ul className="mt-2 text-gray-400 text-sm space-y-2">
+                {(Array.isArray(experience.desc)
+                  ? experience.desc
+                  : [experience.desc]
+                ).map((point, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <motion.div
+                      animate={{ opacity: [1, 0.1, 1] }}
+                      transition={{ duration: 1, repeat: Infinity }}
+                    >
+                      <TbArrowBadgeRight
+                        className="mt-0.5 text-purple-600 flex-shrink-0 -ml-3"
+                        size={18}
+                      />
+                    </motion.div>
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
               <div className="mt-4">
                 <span className="font-medium text-white h-4">
                   Used Tech Stacks:

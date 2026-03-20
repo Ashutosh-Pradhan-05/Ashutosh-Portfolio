@@ -4,6 +4,7 @@ import { IoEye } from "react-icons/io5";
 import { ImUndo2 } from "react-icons/im";
 import { projects } from "../../constants";
 import { LuExternalLink } from "react-icons/lu";
+import { TbArrowBadgeRight } from "react-icons/tb";
 
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -137,9 +138,22 @@ const Work = () => {
                   </a>
                 </div>
 
-                <p className="text-gray-400 mb-6 lg:text-base text-xs text-justify indent-10">
-                  {selectedProject.description}
-                </p>
+                <ul className="text-gray-400 mb-6 lg:text-base text-xs space-y-2">
+                  {selectedProject.description.map((point, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <motion.div
+                        animate={{ opacity: [1, 0.1, 1] }}
+                        transition={{ duration: 1, repeat: Infinity }}
+                      >
+                        <TbArrowBadgeRight
+                          className="mt-0.5 text-purple-600 flex-shrink-0 -ml-3"
+                          size={18}
+                        />
+                      </motion.div>
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
                 <div className="flex flex-wrap gap-2 mb-6">
                   <h5 className="font-medium text-white">Used Tech Stacks:</h5>
                   {selectedProject.tags.map((tag, index) => (

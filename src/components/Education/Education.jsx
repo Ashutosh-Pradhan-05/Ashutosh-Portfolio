@@ -4,6 +4,7 @@ import { education } from "../../constants";
 import { GiMedallist } from "react-icons/gi";
 import { FaSchoolFlag } from "react-icons/fa6";
 import { FaUserGraduate } from "react-icons/fa";
+import { TbArrowBadgeRight } from "react-icons/tb";
 import { IoLocation, IoCalendar } from "react-icons/io5";
 
 const Education = () => {
@@ -104,9 +105,24 @@ const Education = () => {
               </div>
 
               {/* Description */}
-              <p className="mt-2 text-gray-400 text-sm text-justify indent-10">
-                {edu.desc}
-              </p>
+              <ul className="mt-2 text-gray-400 text-sm space-y-2">
+                {(Array.isArray(edu.desc) ? edu.desc : [edu.desc]).map(
+                  (point, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <motion.div
+                        animate={{ opacity: [1, 0.1, 1] }}
+                        transition={{ duration: 1, repeat: Infinity }}
+                      >
+                        <TbArrowBadgeRight
+                          className="mt-0.5 text-purple-600 flex-shrink-0 -ml-3"
+                          size={18}
+                        />
+                      </motion.div>
+                      <span>{point}</span>
+                    </li>
+                  ),
+                )}
+              </ul>
             </div>
           </div>
         ))}

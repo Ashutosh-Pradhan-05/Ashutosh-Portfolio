@@ -138,7 +138,11 @@ export const experiences = [
     company: "ThinkBridge",
     location: "Pune, IN • On-site",
     date: "Nov 2025 - Dec 2025",
-    desc: "Experienced in debugging, UI optimization, application logic development, and localStorage-based data management. Skilled in building responsive web applications using HTML, Tailwind CSS, and JavaScript. Also authored a research paper on AI-integrated coding tools and AI-assisted IDE workflows.",
+    desc: [
+      "Worked on a project involving debugging, UI optimization, and improving application stability and performance.",
+      "Debugged a responsive web app using HTML, Tailwind CSS, JavaScript, and localStorage for client-side data storage.",
+      "Authored and submitted a research paper on AI-integrated coding tools and AI-assisted IDE workflows.",
+    ],
     skills: [
       "HTML",
       "CSS",
@@ -164,7 +168,11 @@ export const experiences = [
     website: "https://nareshit.com",
     location: "Hyderabad, IN • On-site",
     date: "Jul 2024 - Dec 2024",
-    desc: "Completed an intensive six months offline training program in UI Full Stack Development, based in Hyderabad, India. This comprehensive program focused on hands-on learning and real-time project development, equipping me with the skills and confidence to build responsive websites and full-stack web applications from scratch.",
+    desc: [
+      "Completed an intensive six months offline training program in UI Full Stack Development, based in Hyderabad, India.",
+      "This comprehensive program focused on hands-on learning and real-time project development,",
+      "equipping me with the skills and confidence to build responsive websites and full-stack web applications from scratch.",
+    ],
     skills: [
       "React",
       "Redux",
@@ -199,7 +207,11 @@ export const experiences = [
     website: "https://internshipstudio.com/",
     location: "Pune, IN • Remote",
     date: "Feb 2024 - May 2024",
-    desc: "Completed a remote internship focused on AWS cloud architecture, deployment and infrastructure automation. Gained hands-on experience with AWS EC2, S3, IAM, Lambda and CloudFormation to deploy scalable cloud solutions. Automated infrastructure tasks, reducing manual setup time by 40% using Infrastructure-as-Code (IaC) and analyzed small-scale cloud projects by applying serverless architecture for improved efficiency and cost reduction.",
+    desc: [
+      "Completed a remote internship focused on AWS cloud architecture, deployment, and infrastructure automation.",
+      "Gained hands-on experience with AWS EC2, S3, IAM, Lambda, and CloudFormation to deploy scalable cloud solutions and automate infrastructure tasks, reducing manual setup time by 40% using Infrastructure-as-Code (IaC).",
+      "Analyzed small-scale cloud projects by applying serverless architecture for improved efficiency, scalability, and cost reduction.",
+    ],
     skills: ["AWS", "S3", "EC2", "IAM", "CI/CD", "Lambda"],
   },
 ];
@@ -213,7 +225,11 @@ export const education = [
     location: "Bhubaneswar, Odisha, India",
     date: "Sep 2020 - May 2024",
     grade: "8.23 CGPA",
-    desc: "During my B.Tech at Trident Academy of Technology under Biju Patnaik University of Technology, I developed a strong academic foundation in core areas of computer science and software engineering. My coursework included Data Structures and Algorithms [DSA], Object-Oriented Programming [OOP], Database Management Systems [DBMS], Web Development and Software Engineering, which equipped me with both theoretical knowledge and practical problem-solving skills. Beyond academics, I actively engaged in co-curricular activities and technical communities, including the Cyber Security Club and Coding Club, where I participated in workshops, hackathons and collaborative projects. These experiences significantly enhanced my technical capabilities, team collaboration and adaptability to real-world challenges. Overall, my time at Trident Academy played a pivotal role in shaping my technical proficiency and professional mindset, preparing me for a dynamic career in the tech industry.",
+    desc: [
+      "Built a strong foundation in computer science and software engineering through coursework in DSA, OOP, DBMS, Web Development, and Software Engineering.",
+      "Developed practical problem-solving skills along with theoretical knowledge through academic learning and hands-on projects.",
+      "Actively participated in cybersecurity and coding clubs, workshops, hackathons, and collaborative projects, enhancing technical skills, teamwork, and adaptability for real-world challenges.",
+    ],
   },
   {
     id: 1,
@@ -223,7 +239,11 @@ export const education = [
     location: "Jajpur, Odisha, India",
     date: "Jun 2018 - Mar 2020",
     grade: "64.83%",
-    desc: "I completed my Higher Secondary Education [Class 11th and 12th] at Gokarnika Higher Secondary School, Jajpur, under CHSE, Odisha, with a specialization in Physics, Chemistry, Mathematics, and Biology [PCMB]. The curriculum offered a balanced understanding of mathematical and life sciences through extensive laboratory work, including experiments in circuits, mechanics, titrations, and microscopy, which enhanced my analytical and practical skills. Alongside academics, I actively participated in sports like volleyball and badminton, developing leadership, teamwork, and time management abilities. This education built a strong foundation for both my technical and interpersonal growth, shaping my academic and professional journey.",
+    desc: [
+      "I completed my Higher Secondary Education [Class 11th and 12th] at Gokarnika Higher Secondary School, Jajpur, under CHSE, Odisha, with a specialization in Physics, Chemistry, Mathematics, and Biology [PCMB].",
+      "The curriculum offered a balanced understanding of mathematical and life sciences through extensive laboratory work, including experiments in circuits, mechanics, titrations, and microscopy, which enhanced my analytical and practical skills.",
+      "Alongside academics, I actively participated in sports like volleyball and badminton, developing leadership, teamwork, and time management abilities. This education built a strong foundation for both my technical and interpersonal growth, shaping my academic and professional journey.",
+    ],
   },
   {
     id: 2,
@@ -232,7 +252,11 @@ export const education = [
     location: "Jajpur, Odisha, India",
     date: "Jun 2008 - Mar 2018",
     grade: "67.33%",
-    desc: "I completed my primary and secondary education at Hatibari Nodal High School, Jajpur, under the Board of Secondary Education [BSE], Odisha. Beginning from Class 1 and continuing through Class 10, this decade-long academic journey laid the foundation of my intellectual growth and personal discipline. The school’s structured curriculum and emphasis on holistic learning nurtured my curiosity, academic consistency, and strong work ethic. These formative years not only equipped me with essential knowledge and values but also shaped the aspirations and core habits that continue to guide my educational and professional pursuits today.",
+    desc: [
+      "I completed my primary and secondary education at Hatibari Nodal High School, Jajpur, under the Board of Secondary Education [BSE], Odisha. Beginning from Class 1 and continuing through Class 10, this decade-long academic journey laid the foundation of my intellectual growth and personal discipline.",
+      "The school's structured curriculum and emphasis on holistic learning nurtured my curiosity, academic consistency, and strong work ethic.",
+      "These formative years not only equipped me with essential knowledge and values but also shaped the aspirations and core habits that continue to guide my educational and professional pursuits today.",
+    ],
     degree: "Schooling • 10th · HSC",
   },
 ];
@@ -241,8 +265,11 @@ export const projects = [
   {
     id: 0,
     title: "My Portfolio Website",
-    description:
-      "This project is a fully responsive personal portfolio website developed using React and Vite, designed to deliver a seamless experience across both mobile and desktop devices. It features a modern, clean UI built with Tailwind CSS and incorporates interactive animations using Framer Motion, react-parallax-tilt and react-typing-effect, boosting user engagement by 60%. The application is structured with reusable components validated using prop-types and implements client-side routing via react-router-dom for smooth navigation. Additional functionalities include a real-time contact form powered by EmailJS, toast notifications via react-toastify and dynamic typewriter effects. The portfolio was built and deployed with a 65% faster load speed and 95% cross-device compatibility, and integrated with Google Analytics to track and improve user engagement.",
+    description: [
+      "This project is a fully responsive personal portfolio website developed using React and Vite, designed to deliver a seamless experience across both mobile and desktop devices. It features a modern, clean UI built with Tailwind CSS and incorporates interactive animations using Framer Motion, react-parallax-tilt and react-typing-effect, boosting user engagement by 60%.",
+      "The application is structured with reusable components validated using prop-types and implements client-side routing via react-router-dom for smooth navigation. Additional functionalities include a real-time contact form powered by EmailJS, toast notifications via react-toastify and dynamic typewriter effects.",
+      "The portfolio was built and deployed with a 65% faster load speed and 95% cross-device compatibility, and integrated with Google Analytics to track and improve user engagement.",
+    ],
     image: reactPortfolioLogo,
     tags: [
       "React",
@@ -265,8 +292,11 @@ export const projects = [
   {
     id: 1,
     title: "E-Commerce Website",
-    description:
-      "Developed a scalable full-stack e-commerce web application with React, Node.js, Express.js, and MongoDB, integrating secure authentication and state management using JWT and Redux, and leveraging Vite as a buildtool for fast development and optimized performance.",
+    description: [
+      "Developed a scalable full-stack e-commerce web application with React, Node.js, Express.js, and MongoDB,",
+      "Integrating secure authentication and state management using JWT and Redux,",
+      "And leveraging Vite as a buildtool for fast development and optimized performance.",
+    ],
     image: ecomLogo,
     tags: [
       "Node.js",
@@ -290,8 +320,11 @@ export const projects = [
   {
     id: 2,
     title: "To-DO List [SPA]",
-    description:
-      "A dynamic, single-page To-Do web application for managing tasks and appointments. Features include user registration, login, personalized dashboards, and CRUD operations for appointments. Built with responsive design for seamless user experience, leveraging modern web technologies for efficient task management.",
+    description: [
+      "A dynamic, single-page To-Do web application for managing tasks and appointments.",
+      "Features include user registration, login, personalized dashboards, and CRUD operations for appointments.",
+      "Built with responsive design for seamless user experience, leveraging modern web technologies for efficient task management.",
+    ],
     image: todoLogo,
     tags: [
       "Node.js",
@@ -310,8 +343,11 @@ export const projects = [
   {
     id: 3,
     title: "Personal Portfolio",
-    description:
-      "This personal portfolio website, built with HTML, CSS, Tailwind CSS, Bootstrap, and JavaScript, showcases my expertise in front-end development through a modern, fully responsive design. It highlights my skills, projects, and professional experience with an intuitive interface, smooth animations, and optimized performance.",
+    description: [
+      "Developed a modern, fully responsive personal portfolio website using HTML, CSS, Tailwind CSS, Bootstrap, and JavaScript, demonstrating expertise in front-end development.",
+      "Designed an intuitive interface to effectively showcase skills, projects, and professional experience, ensuring seamless user navigation and engagement.",
+      "Implemented smooth animations and performance optimizations to deliver a polished, professional, and highly responsive user experience.",
+    ],
     image: portfolioLogo,
     tags: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Bootstrap"],
     github: "https://ashutosh-pradhan-05.github.io/Ashu_Portfolio",
@@ -319,8 +355,11 @@ export const projects = [
   {
     id: 4,
     title: "EMI Calculator",
-    description:
-      "This EMI Calculator is a responsive and user-friendly web app developed using HTML, CSS, JavaScript, and Bootstrap, offering precise calculations of equated monthly installments with seamless functionality.",
+    description: [
+      "Developed a responsive and user-friendly EMI Calculator web application using HTML, CSS, JavaScript, and Bootstrap.",
+      "Designed to provide accurate calculations of equated monthly installments with a seamless and intuitive interface.",
+      "Ensured smooth functionality and optimal user experience across devices through responsive design and efficient coding practices.",
+    ],
     image: emiLogo,
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     github: "https://ashutosh-pradhan-05.github.io/EMI_Calculator",
@@ -328,8 +367,11 @@ export const projects = [
   {
     id: 5,
     title: "BMI Calculator",
-    description:
-      "Developed a dynamic and responsive BMI Calculator web app leveraging HTML, CSS, and Bootstrap for an intuitive user interface, and JavaScript for efficient real-time BMI computation and validation.",
+    description: [
+      "Developed a dynamic and responsive BMI Calculator web application using HTML, CSS, and Bootstrap for a clean and intuitive user interface.",
+      "Implemented real-time BMI computation and input validation using JavaScript for efficient and accurate results.",
+      "Ensured seamless functionality and an enhanced user experience across devices through responsive design and optimized code structure.",
+    ],
     image: bmiLogo,
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     github: "https://ashutosh-pradhan-05.github.io/BMI_Calculator",
@@ -337,8 +379,11 @@ export const projects = [
   {
     id: 6,
     title: "City List & Unlist",
-    description:
-      "This web app efficiently manages city lists with a modern tech stack [HTML, CSS, JavaScript, Bootstrap]. It supports adding, editing, sorting, and deleting cities, enhanced by dynamic interactions. A user-friendly modal popup enables seamless city edits, and the responsive design ensures usability across devices.",
+    description: [
+      "Developed a web application for efficient city list management using HTML, CSS, JavaScript, and Bootstrap with a modern, responsive design.",
+      "Implemented functionality to add, edit, sort, and delete cities, enhanced with dynamic interactions for a seamless user experience.",
+      "Integrated a user-friendly modal popup for editing city details and ensured full responsiveness across all devices for optimal usability.",
+    ],
     image: cityLogo,
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     github: "https://ashutosh-pradhan-05.github.io/Add_City",
@@ -346,8 +391,11 @@ export const projects = [
   {
     id: 7,
     title: "Real-Time Analog Clock",
-    description:
-      "This project is a real-time Indian Standard Time [IST] analog clock built using HTML, CSS, and JavaScript. The clock updates every second with smooth rotations for the hour, minute, and second hands. It features a custom-designed clock face with a background image, showcasing CSS styling and JavaScript for real-time functionality.",
+    description: [
+      "Developed a real-time Indian Standard Time (IST) analog clock using HTML, CSS, and JavaScript.",
+      "Implemented smooth second-by-second rotations for the hour, minute, and second hands, ensuring accurate timekeeping.",
+      "Designed a custom clock face with a background image, demonstrating advanced CSS styling and dynamic JavaScript functionality.",
+    ],
     image: clkLogo,
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     github: "https://ashutosh-pradhan-05.github.io/Realtime_analog_wall_clock",
