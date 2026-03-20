@@ -1,11 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { education } from "../../constants";
-import { GiMedallist } from "react-icons/gi";
 import { FaSchoolFlag } from "react-icons/fa6";
 import { FaUserGraduate } from "react-icons/fa";
 import { TbArrowBadgeRight } from "react-icons/tb";
-import { IoLocation, IoCalendar } from "react-icons/io5";
+import { IoLocation, IoCalendar, IoSchool } from "react-icons/io5";
 
 const Education = () => {
   return (
@@ -99,8 +98,8 @@ const Education = () => {
               </div>
 
               {/* Score */}
-              <div className="flex items-center space-x-1 text-white font-semibold text-sm sm:text-base mt-4">
-                <GiMedallist size={20} />
+              <div className="flex items-center space-x-1 text-white font-semibold text-sm sm:text-base mt-4 -ml-2">
+                <IoSchool size={20} />
                 <p>{edu.grade}</p>
               </div>
 

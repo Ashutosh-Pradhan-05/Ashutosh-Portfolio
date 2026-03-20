@@ -103,7 +103,7 @@ const Work = () => {
       {/* Modal Container */}
       {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4">
-          <div className="bg-gray-900 rounded-xl shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto relative">
+          <div className="border border-white bg-radial from-[#050414] from-50% to-[#2c076c] backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.7)] rounded-xl w-full max-w-3xl max-h-[90vh] overflow-y-auto relative">
             <div className="flex justify-end p-4">
               <button
                 onClick={handleCloseModal}
@@ -115,23 +115,23 @@ const Work = () => {
             </div>
 
             <div className="flex flex-col">
-              <div className="w-full flex justify-center bg-gray-900 px-4">
+              <div className="w-full flex justify-center">
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
-                  className="lg:w-full w-[95%] object-contain rounded-xl shadow-2xl"
+                  className="lg:w-full w-[95%] object-contain rounded-lg md:rounded-4xl shadow-2xl md:p-4"
                 />
               </div>
               <div className="lg:p-8 p-6">
                 <div className="flex items-center gap-2 md:gap-4 mb-4">
-                  <h3 className="text-md lg:text-3xl font-bold text-white">
+                  <h3 className="text-md lg:text-3xl font-bold text-white -ml-2">
                     {selectedProject.title}
                   </h3>
                   <a
                     href={selectedProject.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-purple-600 hover:bg-purple-800 text-white text-xs lg:text-sm font-semibold px-1 py-0.5 rounded-lg transition duration-300 flex items-center gap-1 cursor-none hover:scale-110"
+                    className="bg-purple-600 hover:bg-purple-800 text-white text-xs lg:text-sm font-semibold px-2 py-1 rounded-lg transition duration-300 flex items-center gap-1 cursor-none hover:scale-110"
                   >
                     View{" "}
                     <LuExternalLink className="text-white text-sm lg:text-base" />
@@ -155,7 +155,9 @@ const Work = () => {
                   ))}
                 </ul>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  <h5 className="font-medium text-white">Used Tech Stacks:</h5>
+                  <h5 className="font-medium text-white -ml-2">
+                    Used Tech Stacks:
+                  </h5>
                   {selectedProject.tags.map((tag, index) => (
                     <span
                       key={index}

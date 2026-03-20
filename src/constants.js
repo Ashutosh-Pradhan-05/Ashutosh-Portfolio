@@ -238,7 +238,7 @@ export const education = [
     school: "Gokarnika H.S. School",
     location: "Jajpur, Odisha, India",
     date: "Jun 2018 - Mar 2020",
-    grade: "64.83%",
+    grade: "65.00%",
     desc: [
       "I completed my Higher Secondary Education [Class 11th and 12th] at Gokarnika Higher Secondary School, Jajpur, under CHSE, Odisha, with a specialization in Physics, Chemistry, Mathematics, and Biology [PCMB].",
       "The curriculum offered a balanced understanding of mathematical and life sciences through extensive laboratory work, including experiments in circuits, mechanics, titrations, and microscopy, which enhanced my analytical and practical skills.",
@@ -276,16 +276,17 @@ export const projects = [
       "React-Router",
       "React-Icons",
       "React-Toastify",
-      "Typewriter-Effect",
       "React-Tilt",
+      "React-Snowfall",
+      "Typewriter-Effect",
       "Framer-Motion",
       "HTML",
       "CSS",
       "Tailwind CSS",
       "JavaScript",
+      "Vite",
       "EmailJS",
       "Google Analytics",
-      "Vite",
     ],
     github: "https://github.com/Ashutosh-Pradhan-05/Ashutosh-Portfolio",
   },
@@ -378,7 +379,7 @@ export const projects = [
   },
   {
     id: 6,
-    title: "City List & Unlist",
+    title: "City List & Unlist CRUD Operations",
     description: [
       "Developed a web application for efficient city list management using HTML, CSS, JavaScript, and Bootstrap with a modern, responsive design.",
       "Implemented functionality to add, edit, sort, and delete cities, enhanced with dynamic interactions for a seamless user experience.",
@@ -390,7 +391,7 @@ export const projects = [
   },
   {
     id: 7,
-    title: "Real-Time Analog Clock",
+    title: "IST Analog Clock",
     description: [
       "Developed a real-time Indian Standard Time (IST) analog clock using HTML, CSS, and JavaScript.",
       "Implemented smooth second-by-second rotations for the hour, minute, and second hands, ensuring accurate timekeeping.",
